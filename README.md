@@ -13,5 +13,5 @@ Date : avril - juillet 2022
 ## *Pratiques et réflexions autour de l'édition numérique de sources anciennes et de ses outils. L'exemple du projet Dyrin, programme de recherche sur la faune du Grand Nord.*
 
 Ce dépot contient :
-- les fichiers correspondant au projet Dyrin (les fichiers édités se trouvent dans le dossier `dyrin-editions`)
+- les fichiers correspondant au projet Dyrin (les fichiers édités se trouvent dans le dossier `dyrin-editions` du dossier `stage-main`)
 - le rapport de mon mémoire de stage en version LateX et PDF
