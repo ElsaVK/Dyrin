@@ -1,0 +1,488 @@
+@font-face {
+    font-family: "junicode-server";
+    src: url('../fonts/junicode/Junicode.ttf');
+}
+@font-face {
+    font-family: "junicode-serverItalic";
+    src: url('../fonts/junicode/Junicode-Italic.ttf');
+}
+@font-face {
+    font-family: "junicode-serverBold";
+    src: url('../fonts/junicode/Junicode-Bold.ttf');
+}
+@font-face {
+    font-family: "junicode-serverBoldItalic";
+    src: url('../fonts/junicode/Junicode-BoldItalic.ttf');
+}
+
+.responsive {
+ width: 20%;
+ height: auto;
+}
+
+body {
+		background-color: #ﬀf;
+    font-family: sans-serif;
+    font-size: 13pt;
+		letter-spacing: 150%;
+	}
+
+/* gestion du teiHeader */
+.editeur {
+  font-style: italic;
+}
+
+/* gestion des titres */
+h2 {
+  padding: 15px;
+	margin-top: 40px;
+	border-top: solid 3px;
+	border-bottom: solid 2px;
+  border-color: darkred;
+  color: darkred;
+}
+
+h4 {
+  margin: 5px;
+	padding: 5px;
+}
+
+h6 {
+  font-style: oblique;
+  margin: 5px;
+	padding: 5px;
+}
+
+/* fin de gestion des titres */
+
+
+/* gestion des éléments indépendants */
+.note {
+  display: block;
+  margin: 5px;
+  padding-left: 5px;
+  border-radius: 5px 5px 5px 5px;
+  font-size: smaller;
+  text-align: -moz-left;
+  border-style: dotted;
+  border-width: thin;
+}
+
+.passage {
+  display: block;
+}
+/* fin de gestion des éléments indépendants */
+
+/* design des sections */
+.section1 {
+	margin: 15px;
+	padding: 10px;
+}
+
+.section2 {
+  margin: 40px 0px 30px 0px;
+}
+/* fin design des sections */
+
+/* début du design des oeuvre */
+div.section2 div.oeuvre {
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+
+div.oeuvre_editions,
+div.oeuvre_manuscrits,
+div.oeuvre_edition_ancienne,
+div.oeuvre_edition_seule,
+div.oeuvre_edition_critique,
+div.oeuvre_trad_seule,
+div.oeuvre_fac-simile,
+div.oeuvre_edition_princeps {
+  margin: 25px 50px 10px 10%;
+}
+
+div.oeuvre_bibl_zoologie,
+div.ref_zoologie {
+  margin: 20px 0px 0px 20px;
+}
+/* fin du design des oeuvre */
+
+/* design des index */
+
+[class^="index"] {
+  margin: 10px;
+}
+
+section.bloc [class^="index"] {
+  margin: 30px;
+}
+
+div.index_lieux span {
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgreen;
+}
+
+a.lieu {
+  color: darkgreen;
+}
+
+a.lieu:hover,
+a.theme:hover,
+a.personne:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+
+div.index_themes span{
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkorange;
+}
+
+a.theme {
+  color: darkorange;
+}
+
+div.index_zoonymes span{
+  border-style: solid;
+  border-width: 1px;
+  border-color: midnightblue;
+}
+
+a.zoonyme {
+  color: darkblue;
+}
+
+div.index_personnes span{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0066b2;
+}
+
+div.index_animaux span{
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+}
+
+a.animal {
+  color: gray;
+}
+
+div.index_analytique span{
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+a.analytique {
+  color: darkred;
+}
+
+.index_term {
+  padding: 5px;
+  margin: 5px;
+  border: solid 1px;
+  display: inline-block;
+}
+
+fieldset id {
+  color: red;
+}
+
+div.index h1 {
+  color: #A60000;
+  font-size: revert;
+}
+/* fin design des index */
+
+
+/* début design du menu */
+
+body.max-menu-left nav ul {
+  list-style-type: none;
+}
+
+body.max-menu-left nav a {
+  background-color: transparent;
+  color: #A60000;
+
+}
+
+li.nav-item {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li.nav-item a{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li.nav-item a:hover{
+  text-decoration: underline;
+}
+
+/* fin design du menu */
+
+/* début design du sommaire */
+#toc li a {
+  text-decoration: none;
+  vertical-align: unset;
+  font-size: larger;
+  color: darkred;
+}
+
+#toc li {
+  list-style-type: '- ';
+  margin: 10px;
+}
+
+#toc li desc {
+  font-style: italic;
+  font-size: smaller;
+}
+
+/* fin du design du sommaire */
+
+
+div.ref_biblio li,
+div.biblio_animal li {
+  margin: inherit;
+}
+
+div.editions a.bibref {
+  color: darkred;
+  text-decoration: none;
+}
+
+        /* début design des titres */
+
+        .titre_fiche {
+          border-style: solid;
+          border-width: 2px;
+          padding: 3px 0px 0px 3px;
+          background: #166767;
+          color: white;
+          border-color: #204D4D;
+        }
+
+        div.fiche h1.titre {
+          color: white;
+          border-style: solid;
+          padding-left: 8px;
+          border-width: 1px;
+          background-color: lightslategray;
+          border-color: black;
+          padding-top: 3px;
+        }
+
+        .rubrique {
+          font-style: italic;
+        }
+        .titre_oeuvre {
+          font-weight: bold;
+          font-style: italic;
+
+        }
+
+        .titre_fig {
+        font-size: larger;
+        }
+
+        .titre_bibliographie {
+          margin: 20px;        }
+
+        .titre_usuel {
+          font-style: italic;
+        }
+        /* fin design des titres */
+
+/* début design images */
+
+.img_pres {
+  float: right;
+  margin-top: 10px;
+  border-style: double;
+}
+
+.icono {
+  border: solid 1px;
+  margin: 2px;
+}
+
+.fig_ico {
+border: double;
+margin: 1Opx;
+margin: inherit;
+padding: inherit;
+}
+
+div.figure_pres img {
+  display: block;
+  float: right;
+  margin: 10px 100px 0px 0px;
+  border-style: solid;
+  border-color: #204d4d;
+  border-width: thin;
+}
+
+div.graphic a {
+  color:black;
+  text-decoration: none;
+}
+
+.figure_img {
+border-style: dashed;
+border-width: 1px;
+padding: inherit;
+margin: inherit;
+}
+
+.figure_note {
+  font-style: italic;
+  display: block;
+}
+
+section.pres {
+  padding-bottom: 20px;
+}
+
+/* fin design images */
+
+.auteur_oeuvre {
+  font-weight: bold;
+}
+
+span.mirador-link {
+  padding: 2px 2px 0px 2px;
+  color: darkred;
+  margin: 2px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+span.mirador-link:hover,
+#toc li a:hover,
+span[class^="index"] a:hover {
+  text-decoration: underline;
+}
+
+div[class="texte_pres"] img {
+  display: block;
+  margin-left: auto;
+  width: 50%
+}
+
+/* design auteurs */
+div.bandeau_oeuvre a.personne
+ {
+  text-decoration: none;
+  color: #0066b2;
+  font-size: 150%;
+}
+
+div.bandeau_oeuvre a.personne:hover {
+  color:darkblue;
+}
+
+div.images a.personne:hover {
+  color: darkblue;
+}
+
+span.index_term a.personne {
+  color:darkblue;
+}
+
+/* fin design auteurs */
+
+a {
+  color: #0066b2;
+  text-decoration: none;
+
+}
+
+a.fiche {
+  color: black;
+  text-decoration: none;
+}
+
+a.fiche:hover {
+  color: black;
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+abbr[title],
+abbr[data-bs-original-title]  {
+  text-decoration: none;
+  cursor: pointer;;
+}
+
+/* design des licences */
+
+.licence {
+  font-size: smaller;
+}
+
+/* fin design des licences */
+
+a.source_url,
+div.graphic a.source_url {
+  color: darkblue;
+  border-style: solid;
+  border-width: thin;
+  padding: 2px 2px 0px 2px;
+  margin: 2px;
+}
+
+a.source_url:hover,
+div.graphic a.source_url:hover {
+  color: darkred;
+}
+
+*[class="hide"] {
+        display: none !important;
+    }
+
+
+a.personne,
+a.auteur, {
+  color: #0066b2;
+}
+
+/* début gestion des puces de biblio */
+div.ref_ref_biblio li,
+div.biblio_etudes li {
+  margin: 10px 0px 0px 20px;
+}
+/* fin de gestion des puces de biblio */
+
+div.oeuvre div.index {
+  display: block;
+  padding-top: inherit;
+  margin-left: 20px;
+}
+
+/* gestion des images */
+div.class="section2">div {
+  border: solid;
+  border-width: 1px;
+}
+
+.image {
+  margin: 0px 0px 30px 0px;
+  border-left: solid;
+  border-width: thin;
+  padding: 0px 0px 15px 15px;
+  border-color: darkred;
+}
+/* fin de gestion des images */
+
+  .desc {
+    padding-left: 25px;
+  }

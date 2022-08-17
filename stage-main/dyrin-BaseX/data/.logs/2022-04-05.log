@@ -1,0 +1,174 @@
+10:32:41.918	SERVER	admin	OK	Server was started (port: 1984).
+10:32:41.956	SERVER	admin	OK	HTTP Server was started (port: 8984).
+10:32:50.252	127.0.0.1:49755	admin	REQUEST	[GET] /max.html
+10:32:51.371	127.0.0.1:49755	admin	500	Stopped at /Users/elsafalcoz/Documents/projetsMaX/dyrin/dyrin-BaseX/webapp/MaX/rxq/util.xqm, 7/58: [XQST0059] Module not found: org.basex.modules.fop.FOP.	1120.79 ms
+10:34:35.215	SERVER	admin	OK	Server was stopped (port: 1984).
+10:34:35.234	SERVER	admin	OK	HTTP Server was stopped (port: 8984).
+10:34:42.361	SERVER	admin	OK	Server was started (port: 1984).
+10:34:42.399	SERVER	admin	OK	HTTP Server was started (port: 8984).
+10:34:51.636	127.0.0.1:49764	admin	REQUEST	[GET] /max.html
+10:34:53.006	127.0.0.1:49764	admin	404		1372.11 ms
+10:35:34.548	127.0.0.1:49764	admin	REQUEST	[GET] /
+10:35:34.576	127.0.0.1:49764	admin	500	Stopped at /Users/elsafalcoz/Documents/projetsMaX/dyrin/dyrin-BaseX/webapp/restxq.xqm, 18/10: [basex:restxq] Multiple services defined for path "": - page:start - max.util:error404	28.0 ms
+11:03:27.446	127.0.0.1:49801	admin	REQUEST	SET CHOP	19.53 ms
+11:03:27.447	127.0.0.1:49801	admin	OK	CHOP: false	0.44 ms
+11:03:27.476	127.0.0.1:49801	admin	REQUEST	CREATE DB dyrin	1.83 ms
+11:03:27.500	127.0.0.1:49801	admin	OK	Database 'dyrin' created in 21.45 ms.	23.47 ms
+11:03:27.501	127.0.0.1:49801	admin	REQUEST	ADD /Users/elsafalcoz/Documents/fichiersbasex/dyrin	0.95 ms
+11:03:27.589	127.0.0.1:49801	admin	OK	Resource(s) added in 86.46 ms.	88.61 ms
+11:36:01.950	127.0.0.1:49919	admin	REQUEST	[GET] /
+11:36:01.975	127.0.0.1:49919	admin	500	Stopped at /Users/elsafalcoz/Documents/projetsMaX/dyrin/dyrin-BaseX/webapp/restxq.xqm, 18/10: [basex:restxq] Multiple services defined for path "": - page:start - max.util:error404	25.05 ms
+11:36:02.001	127.0.0.1:49919	admin	REQUEST	[GET] /favicon.ico
+11:36:02.035	127.0.0.1:49919	admin	200		33.79 ms
+12:46:13.097	SERVER	admin	OK	HTTP Server was stopped (port: 8984).
+12:46:13.097	SERVER	admin	OK	Server was stopped (port: 1984).
+17:00:03.936	SERVER	admin	OK	Server was started (port: 1984).
+17:00:03.973	SERVER	admin	OK	HTTP Server was started (port: 8984).
+17:00:14.038	127.0.0.1:50678	admin	REQUEST	[GET] /max_tei_demo
+17:00:15.536	127.0.0.1:50678	admin	302	Location: http://localhost:8984/max_tei_demo/accueil.html	1500.95 ms
+17:00:15.553	127.0.0.1:50678	admin	REQUEST	[GET] /max_tei_demo/accueil.html
+17:00:15.726	127.0.0.1:50678	admin	INFO	MaX error - Configuration manquante pour le projet "max_tei_demo" (fichier configuration/configuration.xml)
+17:00:15.731	127.0.0.1:50678	admin	200		179.06 ms
+17:00:15.751	127.0.0.1:50678	admin	REQUEST	[GET] /favicon.ico
+17:00:15.774	127.0.0.1:50678	admin	200		22.89 ms
+17:00:21.244	127.0.0.1:50679	admin	REQUEST	[GET] /dyrin/accueil.html
+17:00:21.354	127.0.0.1:50679	admin	INFO	Page/fragment "accueil" introuvable ou mal formé
+17:00:22.255	127.0.0.1:50679	admin	200		1010.78 ms
+17:00:22.283	127.0.0.1:50679	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:00:22.287	127.0.0.1:50680	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:00:22.287	127.0.0.1:50681	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:00:22.288	127.0.0.1:50682	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:00:22.289	127.0.0.1:50683	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:00:22.289	127.0.0.1:50684	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:00:22.300	127.0.0.1:50680	admin	200		13.17 ms
+17:00:22.300	127.0.0.1:50679	admin	200		17.26 ms
+17:00:22.300	127.0.0.1:50684	admin	200		11.13 ms
+17:00:22.300	127.0.0.1:50683	admin	200		12.33 ms
+17:00:22.300	127.0.0.1:50682	admin	200		12.71 ms
+17:00:22.301	127.0.0.1:50681	admin	200		13.54 ms
+17:00:22.310	127.0.0.1:50684	admin	REQUEST	[GET] /core/ui/css/header.css
+17:00:22.311	127.0.0.1:50680	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:00:22.320	127.0.0.1:50680	admin	200		9.1 ms
+17:00:22.320	127.0.0.1:50684	admin	200		10.42 ms
+17:00:22.323	127.0.0.1:50680	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:00:22.323	127.0.0.1:50683	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:00:22.332	127.0.0.1:50680	admin	200		8.96 ms
+17:00:22.332	127.0.0.1:50683	admin	200		8.98 ms
+17:00:26.500	127.0.0.1:50679	admin	REQUEST	[GET] /dyrin/sommaire/macareux_moine.html
+17:00:26.665	127.0.0.1:50679	admin	200		166.3 ms
+17:00:26.700	127.0.0.1:50680	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:00:26.700	127.0.0.1:50683	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:00:26.700	127.0.0.1:50684	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:00:26.700	127.0.0.1:50681	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:00:26.701	127.0.0.1:50679	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:00:26.701	127.0.0.1:50682	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:00:26.710	127.0.0.1:50683	admin	200		10.31 ms
+17:00:26.710	127.0.0.1:50680	admin	200		10.42 ms
+17:00:26.710	127.0.0.1:50679	admin	200		8.98 ms
+17:00:26.710	127.0.0.1:50682	admin	200		8.96 ms
+17:00:26.712	127.0.0.1:50681	admin	200		11.63 ms
+17:00:26.712	127.0.0.1:50684	admin	200		12.39 ms
+17:00:26.714	127.0.0.1:50682	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:00:26.714	127.0.0.1:50680	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:00:26.721	127.0.0.1:50682	admin	200		6.75 ms
+17:00:26.721	127.0.0.1:50680	admin	200		6.75 ms
+17:00:26.723	127.0.0.1:50683	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:00:26.723	127.0.0.1:50682	admin	REQUEST	[GET] /core/ui/css/header.css
+17:00:26.729	127.0.0.1:50683	admin	200		6.2 ms
+17:00:26.729	127.0.0.1:50682	admin	200		5.83 ms
+17:00:30.167	127.0.0.1:50683	admin	REQUEST	[GET] /favicon.ico
+17:00:30.199	127.0.0.1:50683	admin	200		31.95 ms
+17:00:38.299	127.0.0.1:50679	admin	REQUEST	[GET] /dyrin/accueil.html
+17:00:38.364	127.0.0.1:50679	admin	INFO	Page/fragment "accueil" introuvable ou mal formé
+17:00:38.446	127.0.0.1:50679	admin	200		147.65 ms
+17:00:38.469	127.0.0.1:50682	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:00:38.470	127.0.0.1:50680	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:00:38.470	127.0.0.1:50684	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:00:38.471	127.0.0.1:50679	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:00:38.471	127.0.0.1:50681	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:00:38.474	127.0.0.1:50685	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:00:38.477	127.0.0.1:50680	admin	200		7.44 ms
+17:00:38.477	127.0.0.1:50682	admin	200		8.45 ms
+17:00:38.477	127.0.0.1:50684	admin	200		6.93 ms
+17:00:38.478	127.0.0.1:50679	admin	200		7.59 ms
+17:00:38.479	127.0.0.1:50681	admin	200		8.28 ms
+17:00:38.482	127.0.0.1:50682	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:00:38.482	127.0.0.1:50680	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:00:38.483	127.0.0.1:50685	admin	200		9.75 ms
+17:00:38.488	127.0.0.1:50680	admin	200		6.32 ms
+17:00:38.488	127.0.0.1:50684	admin	REQUEST	[GET] /core/ui/css/header.css
+17:00:38.490	127.0.0.1:50682	admin	200		8.84 ms
+17:00:38.491	127.0.0.1:50685	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:00:38.495	127.0.0.1:50684	admin	200		7.15 ms
+17:00:38.496	127.0.0.1:50685	admin	200		5.69 ms
+17:22:59.791	127.0.0.1:50809	admin	REQUEST	[GET] /dyrin/accueil.html
+17:22:59.852	127.0.0.1:50809	admin	INFO	Page/fragment "accueil" introuvable ou mal formé
+17:22:59.928	127.0.0.1:50809	admin	200		137.48 ms
+17:22:59.959	127.0.0.1:50809	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:22:59.960	127.0.0.1:50810	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:22:59.960	127.0.0.1:50811	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:22:59.964	127.0.0.1:50813	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:22:59.964	127.0.0.1:50814	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:22:59.964	127.0.0.1:50812	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:22:59.966	127.0.0.1:50811	admin	200		6.08 ms
+17:22:59.966	127.0.0.1:50810	admin	200		6.28 ms
+17:22:59.966	127.0.0.1:50809	admin	200		7.44 ms
+17:22:59.969	127.0.0.1:50813	admin	200		6.05 ms
+17:22:59.970	127.0.0.1:50814	admin	200		6.3 ms
+17:22:59.970	127.0.0.1:50812	admin	200		6.46 ms
+17:22:59.973	127.0.0.1:50810	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:22:59.973	127.0.0.1:50813	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:22:59.979	127.0.0.1:50813	admin	200		5.94 ms
+17:22:59.979	127.0.0.1:50810	admin	200		5.96 ms
+17:22:59.984	127.0.0.1:50813	admin	REQUEST	[GET] /core/ui/css/header.css
+17:22:59.988	127.0.0.1:50810	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:22:59.989	127.0.0.1:50813	admin	200		5.64 ms
+17:22:59.993	127.0.0.1:50810	admin	200		5.54 ms
+17:23:00.002	127.0.0.1:50813	admin	REQUEST	[GET] /favicon.ico
+17:23:00.013	127.0.0.1:50813	admin	200		10.66 ms
+17:23:01.372	127.0.0.1:50809	admin	REQUEST	[GET] /dyrin/about.html
+17:23:01.450	127.0.0.1:50809	admin	200		78.55 ms
+17:23:01.487	127.0.0.1:50810	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:23:01.487	127.0.0.1:50814	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:23:01.488	127.0.0.1:50811	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:23:01.488	127.0.0.1:50812	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:23:01.488	127.0.0.1:50809	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:23:01.490	127.0.0.1:50815	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:23:01.493	127.0.0.1:50809	admin	200		5.33 ms
+17:23:01.493	127.0.0.1:50810	admin	200		6.7 ms
+17:23:01.493	127.0.0.1:50812	admin	200		5.62 ms
+17:23:01.494	127.0.0.1:50814	admin	200		6.62 ms
+17:23:01.494	127.0.0.1:50811	admin	200		6.41 ms
+17:23:01.495	127.0.0.1:50815	admin	200		5.25 ms
+17:23:01.497	127.0.0.1:50814	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:23:01.497	127.0.0.1:50811	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:23:01.502	127.0.0.1:50814	admin	200		5.49 ms
+17:23:01.503	127.0.0.1:50811	admin	200		5.75 ms
+17:23:01.509	127.0.0.1:50810	admin	REQUEST	[GET] /core/ui/css/header.css
+17:23:01.512	127.0.0.1:50811	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:23:01.516	127.0.0.1:50810	admin	200		6.76 ms
+17:23:01.516	127.0.0.1:50811	admin	200		4.86 ms
+17:25:13.786	127.0.0.1:50825	admin	REQUEST	[GET] /dyrin/sommaire.html
+17:25:13.918	127.0.0.1:50825	admin	200		132.66 ms
+17:25:13.956	127.0.0.1:50825	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:25:13.957	127.0.0.1:50826	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:25:13.961	127.0.0.1:50827	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:25:13.963	127.0.0.1:50829	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:25:13.963	127.0.0.1:50828	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:25:13.963	127.0.0.1:50825	admin	200		7.14 ms
+17:25:13.964	127.0.0.1:50830	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:25:13.963	127.0.0.1:50826	admin	200		6.28 ms
+17:25:13.968	127.0.0.1:50827	admin	200		6.98 ms
+17:25:13.969	127.0.0.1:50829	admin	200		6.56 ms
+17:25:13.970	127.0.0.1:50828	admin	200		7.53 ms
+17:25:13.970	127.0.0.1:50830	admin	200		6.28 ms
+17:25:13.973	127.0.0.1:50829	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:25:13.973	127.0.0.1:50826	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:25:13.979	127.0.0.1:50829	admin	200		5.63 ms
+17:25:13.980	127.0.0.1:50826	admin	200		6.34 ms
+17:25:13.984	127.0.0.1:50829	admin	REQUEST	[GET] /core/ui/css/header.css
+17:25:13.984	127.0.0.1:50826	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:25:13.991	127.0.0.1:50826	admin	200		6.38 ms
+17:25:13.991	127.0.0.1:50829	admin	200		6.75 ms
+17:28:06.552	SERVER	admin	OK	Server was stopped (port: 1984).
+17:28:06.568	SERVER	admin	OK	HTTP Server was stopped (port: 8984).

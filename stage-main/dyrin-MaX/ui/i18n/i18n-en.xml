@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<properties>
+  <entry key="menu.home">Home</entry>
+  <entry key="menu.sommaire">Summary</entry>
+  <entry key="menu.contacts">Contacts</entry>
+  <entry key="menu.recherche">Search</entry>
+  <entry key="menu.about">About</entry>
+  
+  <entry key="search.loading">Searching ...</entry>
+  <entry key="search.results">Result(s)</entry>
+  
+  <entry key="pb">Page breaks</entry>
+  <entry key="reading-options">Reading options</entry>
+
+</properties>

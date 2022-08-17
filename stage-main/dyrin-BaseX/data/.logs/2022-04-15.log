@@ -1,0 +1,154 @@
+17:04:48.563	SERVER	admin	OK	Server was started (port: 16000).
+17:04:48.649	SERVER	admin	OK	HTTP Server was started (port: 16002).
+17:04:59.267	[0:0:0:0:0:0:0:1]:49240	admin	REQUEST	[GET] /
+17:05:02.003	[0:0:0:0:0:0:0:1]:49240	admin	500	Stopped at /Users/ag/Documents/elsa/projetsMaX/dyrin/dyrin-BaseX/webapp/restxq.xqm, 18/10: [basex:restxq] Multiple services defined for path "": - page:start - max.util:error404	2739.6 ms
+17:05:02.233	[0:0:0:0:0:0:0:1]:49240	admin	REQUEST	[GET] /favicon.ico
+17:05:02.391	[0:0:0:0:0:0:0:1]:49240	admin	200		158.45 ms
+17:06:42.625	[0:0:0:0:0:0:0:1]:49252	admin	REQUEST	[GET] /dyrin
+17:06:42.704	[0:0:0:0:0:0:0:1]:49252	admin	302	Location: http://localhost:16002/dyrin/accueil.html	79.05 ms
+17:06:42.714	[0:0:0:0:0:0:0:1]:49252	admin	REQUEST	[GET] /dyrin/accueil.html
+17:06:44.808	[0:0:0:0:0:0:0:1]:49252	admin	200		2094.84 ms
+17:06:44.911	[0:0:0:0:0:0:0:1]:49252	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:06:44.915	[0:0:0:0:0:0:0:1]:49253	admin	REQUEST	[GET] /dyrin/ui/css/menuGauche.css
+17:06:44.918	[0:0:0:0:0:0:0:1]:49255	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:06:44.919	[0:0:0:0:0:0:0:1]:49257	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:06:44.942	[0:0:0:0:0:0:0:1]:49255	admin	200		24.36 ms
+17:06:44.951	[0:0:0:0:0:0:0:1]:49252	admin	200		40.42 ms
+17:06:44.953	[0:0:0:0:0:0:0:1]:49257	admin	200		34.63 ms
+17:06:44.954	[0:0:0:0:0:0:0:1]:49253	admin	200		38.76 ms
+17:06:44.957	[0:0:0:0:0:0:0:1]:49253	admin	REQUEST	[GET] /dyrin/ui/js/dyrin.js
+17:06:44.980	[0:0:0:0:0:0:0:1]:49257	admin	REQUEST	[GET] /core/ui/css/header.css
+17:06:44.982	[0:0:0:0:0:0:0:1]:49253	admin	200		25.3 ms
+17:06:45.008	[0:0:0:0:0:0:0:1]:49255	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:06:45.020	[0:0:0:0:0:0:0:1]:49254	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:06:45.021	[0:0:0:0:0:0:0:1]:49256	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:06:45.026	[0:0:0:0:0:0:0:1]:49255	admin	200		18.71 ms
+17:06:45.030	[0:0:0:0:0:0:0:1]:49257	admin	200		50.0 ms
+17:06:45.044	[0:0:0:0:0:0:0:1]:49257	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:06:45.051	[0:0:0:0:0:0:0:1]:49256	admin	200		30.47 ms
+17:06:45.062	[0:0:0:0:0:0:0:1]:49257	admin	200		18.25 ms
+17:06:45.076	[0:0:0:0:0:0:0:1]:49254	admin	200		55.49 ms
+17:06:45.079	[0:0:0:0:0:0:0:1]:49253	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:06:45.080	[0:0:0:0:0:0:0:1]:49257	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:06:45.097	[0:0:0:0:0:0:0:1]:49253	admin	200		18.8 ms
+17:06:45.100	[0:0:0:0:0:0:0:1]:49257	admin	200		20.33 ms
+17:06:46.528	[0:0:0:0:0:0:0:1]:49252	admin	REQUEST	[GET] /dyrin/sommaire.html
+17:06:47.213	[0:0:0:0:0:0:0:1]:49252	admin	200		685.32 ms
+17:06:47.315	[0:0:0:0:0:0:0:1]:49257	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:06:47.316	[0:0:0:0:0:0:0:1]:49252	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:06:47.318	[0:0:0:0:0:0:0:1]:49256	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:06:47.334	[0:0:0:0:0:0:0:1]:49254	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:06:47.337	[0:0:0:0:0:0:0:1]:49256	admin	200		19.44 ms
+17:06:47.339	[0:0:0:0:0:0:0:1]:49257	admin	200		25.15 ms
+17:06:47.348	[0:0:0:0:0:0:0:1]:49256	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:06:47.348	[0:0:0:0:0:0:0:1]:49252	admin	200		32.99 ms
+17:06:47.355	[0:0:0:0:0:0:0:1]:49254	admin	200		21.24 ms
+17:06:47.357	[0:0:0:0:0:0:0:1]:49257	admin	REQUEST	[GET] /dyrin/ui/js/dyrin.js
+17:06:47.365	[0:0:0:0:0:0:0:1]:49256	admin	200		17.44 ms
+17:06:47.373	[0:0:0:0:0:0:0:1]:49257	admin	200		16.28 ms
+17:06:47.376	[0:0:0:0:0:0:0:1]:49253	admin	REQUEST	[GET] /dyrin/ui/css/menuGauche.css
+17:06:47.391	[0:0:0:0:0:0:0:1]:49253	admin	200		15.08 ms
+17:06:47.391	[0:0:0:0:0:0:0:1]:49257	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:06:47.393	[0:0:0:0:0:0:0:1]:49255	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:06:47.405	[0:0:0:0:0:0:0:1]:49257	admin	200		14.03 ms
+17:06:47.410	[0:0:0:0:0:0:0:1]:49255	admin	200		18.95 ms
+17:06:47.412	[0:0:0:0:0:0:0:1]:49257	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:06:47.414	[0:0:0:0:0:0:0:1]:49253	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:06:47.427	[0:0:0:0:0:0:0:1]:49257	admin	200		14.69 ms
+17:06:47.427	[0:0:0:0:0:0:0:1]:49256	admin	REQUEST	[GET] /core/ui/css/header.css
+17:06:47.433	[0:0:0:0:0:0:0:1]:49253	admin	200		19.44 ms
+17:06:47.441	[0:0:0:0:0:0:0:1]:49256	admin	200		14.19 ms
+17:09:06.346	127.0.0.1:49259	admin	REQUEST	SET CHOP	26.33 ms
+17:09:06.347	127.0.0.1:49259	admin	OK	CHOP: false	0.49 ms
+17:09:12.482	127.0.0.1:49259	admin	REQUEST	LIST dyrin	0.74 ms
+17:09:12.489	127.0.0.1:49259	admin	OK		7.38 ms
+17:10:55.579	127.0.0.1:49259	admin	REQUEST	ADD TO ours_polaire.xml /Users/ag/Documents/elsa/fichiersbasex/dyrin/ours_polaire.xml	1.82 ms
+17:10:55.579	127.0.0.1:49259	admin	ERROR	No database opened.	0.49 ms
+17:10:59.401	127.0.0.1:49259	admin	REQUEST	OPEN dyrin	0.63 ms
+17:10:59.404	127.0.0.1:49259	admin	OK	Database 'dyrin' was opened in 2.78 ms.	3.19 ms
+17:11:01.303	127.0.0.1:49259	admin	REQUEST	ADD TO ours_polaire.xml /Users/ag/Documents/elsa/fichiersbasex/dyrin/ours_polaire.xml	0.95 ms
+17:11:01.381	127.0.0.1:49259	admin	OK	Resource(s) added in 65.61 ms.	78.13 ms
+17:11:36.387	127.0.0.1:49259	admin	REQUEST	ADD TO eider.xml /Users/ag/Documents/elsa/fichiersbasex/dyrin/eider.xml	0.43 ms
+17:11:36.411	127.0.0.1:49259	admin	OK	Resource(s) added in 18.32 ms.	24.13 ms
+17:11:45.869	127.0.0.1:49259	admin	REQUEST	LIST dyrin	0.81 ms
+17:11:45.870	127.0.0.1:49259	admin	OK		2.08 ms
+17:11:55.698	[0:0:0:0:0:0:0:1]:49266	admin	REQUEST	[GET] /dyrin/sommaire.html
+17:11:55.996	[0:0:0:0:0:0:0:1]:49266	admin	200		298.19 ms
+17:11:56.082	[0:0:0:0:0:0:0:1]:49266	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:11:56.083	[0:0:0:0:0:0:0:1]:49268	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:11:56.086	[0:0:0:0:0:0:0:1]:49269	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:11:56.098	[0:0:0:0:0:0:0:1]:49270	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:11:56.102	[0:0:0:0:0:0:0:1]:49269	admin	200		15.92 ms
+17:11:56.102	[0:0:0:0:0:0:0:1]:49266	admin	200		20.03 ms
+17:11:56.117	[0:0:0:0:0:0:0:1]:49269	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:11:56.122	[0:0:0:0:0:0:0:1]:49266	admin	REQUEST	[GET] /dyrin/ui/js/dyrin.js
+17:11:56.132	[0:0:0:0:0:0:0:1]:49268	admin	200		48.44 ms
+17:11:56.136	[0:0:0:0:0:0:0:1]:49266	admin	200		14.28 ms
+17:11:56.145	[0:0:0:0:0:0:0:1]:49267	admin	REQUEST	[GET] /dyrin/ui/css/menuGauche.css
+17:11:56.146	[0:0:0:0:0:0:0:1]:49270	admin	200		48.0 ms
+17:11:56.148	[0:0:0:0:0:0:0:1]:49271	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:11:56.150	[0:0:0:0:0:0:0:1]:49269	admin	200		33.28 ms
+17:11:56.162	[0:0:0:0:0:0:0:1]:49269	admin	REQUEST	[GET] /core/ui/css/header.css
+17:11:56.166	[0:0:0:0:0:0:0:1]:49268	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:11:56.162	[0:0:0:0:0:0:0:1]:49271	admin	200		13.6 ms
+17:11:56.167	[0:0:0:0:0:0:0:1]:49267	admin	200		21.59 ms
+17:11:56.182	[0:0:0:0:0:0:0:1]:49268	admin	200		17.02 ms
+17:11:56.184	[0:0:0:0:0:0:0:1]:49269	admin	200		22.29 ms
+17:11:56.186	[0:0:0:0:0:0:0:1]:49268	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:11:56.187	[0:0:0:0:0:0:0:1]:49271	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:11:56.200	[0:0:0:0:0:0:0:1]:49271	admin	200		13.33 ms
+17:11:56.201	[0:0:0:0:0:0:0:1]:49268	admin	200		14.9 ms
+17:11:57.630	[0:0:0:0:0:0:0:1]:49266	admin	REQUEST	[GET] /dyrin/doc/ours_polaire.html
+17:11:58.468	[0:0:0:0:0:0:0:1]:49266	admin	200		842.48 ms
+17:11:58.535	[0:0:0:0:0:0:0:1]:49271	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:11:58.536	[0:0:0:0:0:0:0:1]:49266	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:11:58.543	[0:0:0:0:0:0:0:1]:49270	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:11:58.545	[0:0:0:0:0:0:0:1]:49268	admin	REQUEST	[GET] /dyrin/ui/css/menuGauche.css
+17:11:58.565	[0:0:0:0:0:0:0:1]:49266	admin	200		30.04 ms
+17:11:58.570	[0:0:0:0:0:0:0:1]:49270	admin	200		27.68 ms
+17:11:58.572	[0:0:0:0:0:0:0:1]:49266	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:11:58.579	[0:0:0:0:0:0:0:1]:49270	admin	REQUEST	[GET] /dyrin/ui/js/dyrin.js
+17:11:58.581	[0:0:0:0:0:0:0:1]:49268	admin	200		35.93 ms
+17:11:58.592	[0:0:0:0:0:0:0:1]:49266	admin	200		19.68 ms
+17:11:58.595	[0:0:0:0:0:0:0:1]:49271	admin	200		60.44 ms
+17:11:58.602	[0:0:0:0:0:0:0:1]:49269	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:11:58.609	[0:0:0:0:0:0:0:1]:49270	admin	200		30.24 ms
+17:11:58.618	[0:0:0:0:0:0:0:1]:49269	admin	200		16.27 ms
+17:11:58.622	[0:0:0:0:0:0:0:1]:49271	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:11:58.636	[0:0:0:0:0:0:0:1]:49271	admin	200		14.17 ms
+17:11:58.638	[0:0:0:0:0:0:0:1]:49267	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:11:58.644	[0:0:0:0:0:0:0:1]:49271	admin	REQUEST	[GET] /core/ui/css/header.css
+17:11:58.655	[0:0:0:0:0:0:0:1]:49267	admin	200		17.03 ms
+17:11:58.655	[0:0:0:0:0:0:0:1]:49271	admin	200		11.35 ms
+17:11:58.657	[0:0:0:0:0:0:0:1]:49270	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:11:58.657	[0:0:0:0:0:0:0:1]:49268	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:11:58.668	[0:0:0:0:0:0:0:1]:49268	admin	200		11.51 ms
+17:11:58.669	[0:0:0:0:0:0:0:1]:49270	admin	200		12.33 ms
+17:12:05.443	[0:0:0:0:0:0:0:1]:49266	admin	REQUEST	[GET] /dyrin/doc/macareux_moine.html
+17:12:05.850	[0:0:0:0:0:0:0:1]:49266	admin	200		407.16 ms
+17:12:05.965	[0:0:0:0:0:0:0:1]:49268	admin	REQUEST	[GET] /dyrin/ui/css/menuGauche.css
+17:12:05.966	[0:0:0:0:0:0:0:1]:49270	admin	REQUEST	[GET] /core/ui/css/tei.css
+17:12:05.965	[0:0:0:0:0:0:0:1]:49271	admin	REQUEST	[GET] /core/ui/lib/bootstrap.min.css
+17:12:05.970	[0:0:0:0:0:0:0:1]:49266	admin	REQUEST	[GET] /core/ui/lib/bootstrap.bundle.min.js
+17:12:05.972	[0:0:0:0:0:0:0:1]:49269	admin	REQUEST	[GET] /core/ui/css/alignment.css
+17:12:05.973	[0:0:0:0:0:0:0:1]:49267	admin	REQUEST	[GET] /dyrin/ui/css/dyrin.css
+17:12:05.981	[0:0:0:0:0:0:0:1]:49268	admin	200		15.5 ms
+17:12:05.981	[0:0:0:0:0:0:0:1]:49270	admin	200		14.59 ms
+17:12:05.983	[0:0:0:0:0:0:0:1]:49266	admin	200		12.8 ms
+17:12:05.986	[0:0:0:0:0:0:0:1]:49270	admin	REQUEST	[GET] /core/ui/js/MaxTEI.js
+17:12:05.987	[0:0:0:0:0:0:0:1]:49268	admin	REQUEST	[GET] /dyrin/ui/js/dyrin.js
+17:12:06.001	[0:0:0:0:0:0:0:1]:49271	admin	200		36.36 ms
+17:12:06.006	[0:0:0:0:0:0:0:1]:49269	admin	200		34.49 ms
+17:12:06.018	[0:0:0:0:0:0:0:1]:49269	admin	REQUEST	[GET] /core/ui/css/header.css
+17:12:06.026	[0:0:0:0:0:0:0:1]:49267	admin	200		53.3 ms
+17:12:06.033	[0:0:0:0:0:0:0:1]:49270	admin	200		46.75 ms
+17:12:06.039	[0:0:0:0:0:0:0:1]:49269	admin	200		21.5 ms
+17:12:06.042	[0:0:0:0:0:0:0:1]:49269	admin	REQUEST	[GET] /core/ui/images/logos/investissement-davenir.png
+17:12:06.042	[0:0:0:0:0:0:0:1]:49270	admin	REQUEST	[GET] /core/ui/images/logos/biblissima.png
+17:12:06.065	[0:0:0:0:0:0:0:1]:49270	admin	200		22.87 ms
+17:12:06.067	[0:0:0:0:0:0:0:1]:49269	admin	200		24.61 ms
+17:12:06.070	[0:0:0:0:0:0:0:1]:49271	admin	REQUEST	[GET] /core/ui/js/AbstractMax.js
+17:12:06.075	[0:0:0:0:0:0:0:1]:49268	admin	200		87.84 ms
+17:12:06.084	[0:0:0:0:0:0:0:1]:49271	admin	200		14.04 ms
+17:13:41.490	SERVER	admin	OK	Server was stopped (port: 16000).
+17:13:41.513	SERVER	admin	OK	HTTP Server was stopped (port: 16002).

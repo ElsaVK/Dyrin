@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Fichier i18n - MaX - Documentation</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="css/mermaid.css" rel="stylesheet" />
+  <link href="css/test.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Fichier i18n";
+    var mkdocs_page_input_path = "i18n.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> MaX - Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Documentation d’utilisation de MaX</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="script.html">Création d'une édition</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="files.html">Organisation des dossiers et des fichiers</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="config.html">Configuration</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="features.html">Fonctionnement</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="basex.html">Fichiers XML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="static_pages.html">Pages HTML statiques</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="home_page.html">Page d’accueil</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="toc.html">Sommaires</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="text.html">Textes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="layout.html">Gabarits, mise en page</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="i18n.html">Fichier i18n</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#fonctionnement">Fonctionnement</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#modifier-la-langue-a-afficher-par-defaut">Modifier la langue à afficher par défaut</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#exemples">Exemples</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#definir-laffichage-du-menu">Définir l’affichage du menu</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#definir-laffichage-du-sommaire">Définir l’affichage du sommaire</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="overriding.html">Surcharges</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="metadata.html">Métadonnées HTML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="production.html">Mise en production</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">MaX - Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Fichier i18n</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="le-fichier-i18n">Le fichier i18n</h1>
+<h2 id="fonctionnement">Fonctionnement</h2>
+<p>Le fichier <span class="fichier">i18n.xml</span> permet de faire le lien entre des termes définis de manière générique et leur rendu dans la langue définie sur le moteur d’affichage. Il permet par exemple de gérer l’affichage des éléments du menu ou des titres du sommaire dans la langue choisie par l’utilisateur.</p>
+<p>Il faut donc autant de fichier <span class="fichier">i18n.xml</span> que de langue(s) définie(s) dans l’édition.</p>
+<p>Exemple d’un fichier i18n en français :</p>
+<pre><code class="language-xml">&lt;!-- Fichier i18n-fr.xml --&gt;
+&lt;properties&gt;
+    &lt;!-- Menu et sous-menu --&gt;
+    &lt;entry key=&quot;menu.accueil&quot;&gt;Accueil&lt;/entry&gt;
+    &lt;entry key=&quot;menu.sommaire&quot;&gt;Sommaire&lt;/entry&gt;
+    &lt;entry key=&quot;menu.meta&quot;&gt;Description scientifique&lt;/entry&gt;
+    &lt;entry key=&quot;menu.porte-documents&quot;&gt;Porte-documents&lt;/entry&gt;
+
+    &lt;!-- Sommaire --&gt;
+    &lt;entry key=&quot;toc.titre&quot;&gt;Recherche par catégories&lt;/entry&gt;
+    &lt;entry key=&quot;toc.ART&quot;&gt;Art - Littérature&lt;/entry&gt;
+    &lt;entry key=&quot;toc.DROIT&quot;&gt;Droit - Formation professionnelle&lt;/entry&gt;
+    &lt;entry key=&quot;toc.ELEVAGE&quot;&gt;Élevage - soins&lt;/entry&gt;
+    &lt;entry key=&quot;toc.EQUITATION&quot;&gt;Équitation, courses&lt;/entry&gt;
+&lt;/properties&gt;
+
+</code></pre>
+<p>Dans la balise <code>entry</code>, l’attribut <code>key</code> contient le terme générique : un seul terme qui se retrouvera dans les différents fichiers i18n des différentes langues. En revanche, le texte à l’intérieur des balises <code>entry</code> change en fonction de la langue définie par l’utilisateur sur MaX.</p>
+<p>Deux fichiers existent par défaut dans le cœur de MaX, pour des éditions en français et en anglais :</p>
+<ul>
+<li>Pour une édition en français : <span class="dossier">[projet-]MaX</span>/<span class="dossier">ui</span>/<span class="dossier">i18n</span>/<span class="fichier">i18n-fr.xml</span></li>
+<li>Pour une édition en anglais : <span class="dossier">[projet-]MaX</span>/<span class="dossier">ui</span>/<span class="dossier">i18n</span>/<span class="fichier">i18n-en.xml</span></li>
+</ul>
+<p>Pour surcharger les fichiers XML, il faut créer un fichier <span class="fichier">i18n[-langueLocale].xml</span>  dans le dossier <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">ui</span>/<span class="dossier">i18n</span> (par exemple <span class="fichier">i18n-fr.xml</span> ou <span class="fichier">i18n-en.xml</span>).</p>
+<p>=&gt; Pour chaque nouveau fichier i18n, le préfixe utilisé doit correspondre au <a href="https://www.iso.org/fr/iso-3166-country-codes.html">code ISO alpha-2</a> de la langue utilisée (ici <code>fr</code> et <code>en</code>).</p>
+<p>Ces fichiers sont ensuite transformés par la feuille XSL <span class="fichier">i18n.xsl</span>, qui se trouve dans le dossier <span class="dossier">[projet-]MaX</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">core</span>.</p>
+<p>Pour que les éléments du i18n soient pris en compte, il est nécessaire de créer, dans le dossier <span class="dossier">fragments</span> de chaque édition, un dossier correspondant à la langue du i18n (en respectant toujours les codes de la <a href="https://www.iso.org/fr/iso-3166-country-codes.html">norme ISO</a>). <br/>
+Par exemple : <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">fragments</span>/<span class="dossier">fr</span> pour une édition en français. </br></p>
+<p>Le nom donné à ce dossier sera celui accolé au nom du fichier <span class="fichier">i18n.xml</span>. Pour un dossier <span class="dossier">fragments</span>/<span class="dossier">en</span>, on aura un fichier <span class="dossier">ui</span>/<span class="dossier">i18n</span>/<span class="fichier">i18n-en.xml</span>.</p>
+<p>Pour chaque <a href="../static_pages">page HTML statique</a> (accueil, contact, bibliographie...), il faudra créer autant de fichiers avec l’extension <code>.frag.html</code> que de langue(s) définie(s). </br>
+Par exemple, pour une édition en français et en anglais qui propose une page  <code>Contact</code>, on placera un fichier <span class="fichier">contact.frag.html</span>, rédigé en français, dans le dossier <span class="dossier">fragments/fr</span> et un fichier <span class="fichier">contact.frag.html</span>, rédigé en anglais, dans le dossier <span class="dossier">fragments/en</span>.</p>
+<div class="mermaid">
+graph LR;
+classDef default color:#274868, fill:#fff, stroke:#274868;
+    edition-->A
+    edition-->B
+    A-->A1
+    A-->A2
+    A1-->A3
+    A2-->A4
+    B-->B1
+    B1-->B2
+    edition["projet-editions/edition"]
+    A["fragments"]
+    A1["fr"]
+    A2["en"]
+    A3("fichiers .frag.html en français")
+    A4("fichiers .frag.html en anglais")
+    B["ui"]
+    B1[i18n]
+    B2("fichiers i18n-fr.xml + i18n-en.xml")
+ </div>
+<p><br/></p>
+<h3 id="modifier-la-langue-a-afficher-par-defaut">Modifier la langue à afficher par défaut</h3>
+<p>Par défaut, lors de l’arrivée sur le site de l’édition, MaX affiche le contenu du fichier <span class="fichier">i18n-fr.xml</span>, et les fragments du dossier <span class="dossier">fragments/fr</span>.</p>
+<p>Pour modifier ce comportement et afficher une autre langue par défaut, il faut ajouter le paramètre <code>@lang</code> au fichier de configuration <span class="fichier">[mon-edition]_config-inc.xml</span>, dans le dossier <span class="dossier">[projet-]editions/[mon-edition]</span>.</p>
+<p>Par exemple, pour une version par défaut en anglais :</p>
+<pre><code class="language-xml"> &lt;edition xml:id=&quot;mon-edition&quot; dbpath=&quot;monedition&quot; 
+ env=&quot;ead&quot; prettyName=&quot;My edition in EAD&quot; lang=&quot;en&quot;&gt;
+</code></pre>
+<p>La valeur de l’attribut <code>@lang</code> doit correspondre au <a href="https://www.iso.org/fr/iso-3166-country-codes.html">code ISO</a> de la langue utilisée (ici <code>en</code>), qui sera également le nom du dossier dans le dossier <span class="dossier">fragments</span> et le préfixe du fichier <span class="fichier">i18n.xml</span>.</p>
+<p>Ce paramètre de l’attribut <code>@lang</code> est <strong>facultatif</strong> : s’il n’est pas ajouté, MaX affiche par défaut la version en français.</p>
+<h2 id="exemples">Exemples</h2>
+<h3 id="definir-laffichage-du-menu">Définir l’affichage du menu</h3>
+<p>Pour définir l’affichage du menu en fonction de la langue, dans les balises <code>&lt;id&gt;</code> du fichier <span class="fichier">menu.xml</span>, on déclare des termes génériques ("accueil", "sommaire"...).</p>
+<pre><code>&lt;!-- Exemple d’un fichier menu.xml --&gt;
+&lt;menu&gt;
+    &lt;entry type=&quot;main&quot;&gt;
+        &lt;id&gt;accueil&lt;/id&gt;
+        &lt;target&gt;accueil.html&lt;/target&gt;
+    &lt;/entry&gt;
+    &lt;entry type=&quot;main&quot;&gt;
+        &lt;id&gt;sommaire&lt;/id&gt;
+        &lt;target&gt;sommaire.html&lt;/target&gt;
+    &lt;/entry&gt;
+&lt;/menu&gt;
+</code></pre>
+<p>Ces termes génériques doivent ensuite être déclarés dans les balises <code>&lt;entry&gt;</code> des différents fichiers <span class="fichier">i18n.xml</span>, pour définir le texte à afficher dans chaque langue. </p>
+<p>Ce qui donnera dans les deux fichiers <span class="fichier">i18n.xml</span>, en français et en anglais :</p>
+<pre><code class="language-xml">&lt;!-- Exemple d’un fichier i18n-fr.xml --&gt;
+&lt;properties&gt;
+    &lt;entry key=&quot;menu.accueil&quot;&gt;Accueil&lt;/entry&gt;
+    &lt;entry key=&quot;menu.sommaire&quot;&gt;Sommaire&lt;/entry&gt;
+&lt;/properties&gt;
+</code></pre>
+<pre><code class="language-xml">&lt;!-- Exemple d’un fichier i18n-en.xml --&gt;
+&lt;properties&gt;
+    &lt;entry key=&quot;menu.accueil&quot;&gt;Home&lt;/entry&gt;
+    &lt;entry key=&quot;menu.sommaire&quot;&gt;Summary&lt;/entry&gt;
+&lt;/properties&gt;
+</code></pre>
+<h3 id="definir-laffichage-du-sommaire">Définir l’affichage du sommaire</h3>
+<p>Pour définir le titre de la page de <a href="../toc/#sommaire-dune-edition">sommaire d’une édition</a> en fonction de la langue, on déclare un terme générique dans une balise <code>&lt;xsl:value-of&gt;</code>, dans le fichier <span class="fichier">toc.xsl</span>. Par exemple, "<em>toc.title</em>".</p>
+<pre><code class="language-xml">&lt;!-- Exemple d’un fichier toc.xsl --&gt;
+&lt;xsl:template match=&quot;/&quot;&gt;
+  &lt;div id=&quot;toc&quot;&gt;
+    &lt;h1&gt;
+      &lt;xsl:value-of select=&quot;max:i18n($project,'toc.title',$locale)&quot;/&gt;
+    &lt;/h1&gt;
+  &lt;/div&gt;
+&lt;/xsl:template&gt;
+</code></pre>
+<p>Ce terme générique doit ensuite être déclaré dans une balise <code>&lt;entry&gt;</code> des différents fichiers i18n.xml. Ce qui donnera dans les deux fichiers <span class="fichier">i18n.xml</span>, en français et en anglais :</p>
+<pre><code class="language-xml">&lt;!-- Exemple d’un fichier i18n-fr.xml --&gt;
+&lt;properties&gt;
+    &lt;entry key=&quot;toc.titre&quot;&gt;Cadre de classement&lt;/entry&gt;
+&lt;/properties&gt;
+</code></pre>
+<pre><code class="language-xml">&lt;!-- Exemple d’un fichier i18n-en.xml --&gt;
+&lt;properties&gt;
+    &lt;entry key=&quot;toc.titre&quot;&gt;File plan&lt;/entry&gt;
+&lt;/properties&gt;
+</code></pre>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="overriding.html" class="btn btn-neutral float-right" title="Surcharges">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="layout.html" class="btn btn-neutral" title="Gabarits, mise en page"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="layout.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="overriding.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="javascripts/mermaid.min.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

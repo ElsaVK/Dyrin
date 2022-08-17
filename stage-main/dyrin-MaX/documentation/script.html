@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Création d'une édition - MaX - Documentation</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="css/mermaid.css" rel="stylesheet" />
+  <link href="css/test.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Cr\u00e9ation d'une \u00e9dition";
+    var mkdocs_page_input_path = "script.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> MaX - Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Documentation d’utilisation de MaX</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="script.html">Création d'une édition</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#deploiement-de-ledition-de-demonstration">Déploiement de l’édition de démonstration</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#deploiement-dune-nouvelle-edition">Déploiement d’une nouvelle édition</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="files.html">Organisation des dossiers et des fichiers</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="config.html">Configuration</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="features.html">Fonctionnement</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="basex.html">Fichiers XML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="static_pages.html">Pages HTML statiques</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="home_page.html">Page d’accueil</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="toc.html">Sommaires</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="text.html">Textes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="layout.html">Gabarits, mise en page</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="i18n.html">Fichier i18n</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="overriding.html">Surcharges</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="metadata.html">Métadonnées HTML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="production.html">Mise en production</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">MaX - Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Création d'une édition</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="creation-dedition">Création d’édition</h1>
+<p>Pour créer un site, il faut créer une nouvelle édition qui va être associée à une base de données XML (BaseX). Le nom de l’édition est le nom qui apparaîtra dans l’URL.</p>
+<p>Deux éditions de démonstration sont proposées pour servir d’exemples de configuration  : </p>
+<ul>
+<li>une édition associée au vocabulaire TEI : <code>max_tei_demo</code> ;</li>
+<li>l’autre associée au vocabulaire EAD : <code>max_ead_demo</code> .</li>
+</ul>
+<p>Vous pouvez <a href="#deploiement-de-ledition-de-demonstration">déployer une édition de démonstration</a> ou directement <a href="#deploiement-dune-nouvelle-edition">déployer une nouvelle édition</a>.</p>
+<h2 id="deploiement-de-ledition-de-demonstration">Déploiement de l’édition de démonstration</h2>
+<p><img src="../images/demoTei.png" alt="édition de démonstration" style="border:1px solid #bbb; padding:0px;width:60%;margin-top:10px"/>
+<br/>
+<br/>
+<img src="../images/demoead.png" alt="édition de démonstration" style="border:1px solid #bbb; padding:0px;width:60%;margin-top:10px"/></p>
+<p>1) Se placer en ligne de commande dans le dossier <span class="dossier">tools</span> de MaX : </p>
+<p><code>cd [projet-]MaX/tools</code></p>
+<p>=&gt; Si le message suivant s’affiche <code>Please install BaseX or set $BASEX_PATH environment variable</code>, il faut alors indiquer le chemin vers le dossier contenant l’application BaseX au moyen de la commande suivante : <br/>
+<code>export BASEX_PATH=../../[projet-]basex</code></p>
+<p>2) Lancer l’outil de création d’une édition de démonstration <strong>si utilisation du port par défaut de BaseX (1984)</strong> </p>
+<ul>
+<li>
+<p>Pour la version EAD démo :
+<code>./max.sh --d-ead</code></p>
+</li>
+<li>
+<p>Pour la version TEI démo :
+<code>./max.sh --d-tei</code></p>
+</li>
+</ul>
+<p>2bis) Lancer l’outil de création d’une édition de démonstration <strong>si utilisation d’un autre port</strong> (port START modifié dans le fichier <span class="fichier">.basex</span>, voir <a href="../install/#procedure">étape 11 de la procédure d’installation</a>)</p>
+<ul>
+<li>
+<p>Pour la version EAD démo :
+<code>./max.sh -p [numero-de-port-START] --d-ead</code></p>
+</li>
+<li>
+<p>Pour la version TEI démo :
+<code>./max.sh -p [numero-de-port-START] --d-tei</code> <br/></p>
+</li>
+</ul>
+<hr />
+<pre style="font-size:80%;">
+    Nota Bene
+    Attention à ne pas confondre le port de la base de données (1984 par défaut) 
+    avec le port du service HTTP (8984 par défaut).
+</pre>
+<hr />
+<p><br/></p>
+<p>3) Renseigner les identifiants et mots de passe de BaseX (<strong>par défaut admin / admin</strong>)</p>
+<ul>
+<li>Please type your BaseX login/password :    </li>
+</ul>
+<pre><code>Username:admin    
+Password:admin    
+</code></pre>
+<p>=&gt; Les éditions de démonstration sont consultables aux adresses suivantes :</p>
+<p>Pour les ports par défaut :</p>
+<ul>
+<li><a href="http://localhost:8984/max_tei_demo/accueil.html">http://localhost:8984/max_tei_demo/accueil.html</a> ;</li>
+<li><a href="http://localhost:8984/max_ead_demo/accueil.html">http://localhost:8984/max_ead_demo/accueil.html</a>.</li>
+</ul>
+<p>Pour les ports modifiés, il faut renseigner dans l’adresse le numéro de port modifié dans le fichier <span class="fichier">jetty.xml</span> (voir <a href="../install/#procedure">étape 12 de la procédure d’installation</a>)</p>
+<ul>
+<li>http://localhost:[numero-de-port]/max_tei_demo/accueil.html ;</li>
+<li>http://localhost:[numero-de-port]/max_ead_demo/accueil.html.</li>
+</ul>
+<hr />
+<pre style="font-size:80%;">
+    Nota Bene
+    Lors du déploiement de l’édition de démonstration (et seulement pour la démonstration),
+    les plugins sont automatiquement activés. Il est donc inutile de procéder à l’activation
+    manuelle des plugins (voir la section plugins).
+</pre>
+<hr />
+<h2 id="deploiement-dune-nouvelle-edition">Déploiement d’une nouvelle édition</h2>
+<p>1) Se placer en ligne de commande dans le dossier <span class="dossier">tools</span> de MaX : </p>
+<p><code>cd [projet-]MaX/tools</code></p>
+<p>=&gt; Si le message suivant s’affiche <code>Please install BaseX or set $BASEX_PATH environment variable</code>, il faut alors indiquer le chemin vers le dossier contenant l’application BaseX au moyen de la commande suivante :</p>
+<p><code>export BASEX_PATH=../../[projet-]BaseX</code></p>
+<p>2) Création de la nouvelle édition <strong>si utilisation du port par défaut de BaseX (1984)</strong> </p>
+<p><code>./max.sh -n</code></p>
+<p>2bis) Création de la nouvelle édition <strong>si utilisation d’un autre port (port START modifié dans le fichier <span class="fichier">.basex</span>, l. 13-14)</strong> (voir <a href="../install/#procedure">étapes 10-11-12 de la procédure d’installation</a>)</p>
+<p><code>./max.sh -p [numero-de-port-START] -n</code>  </p>
+<p>3) Plusieurs questions sont posées afin de renseigner le fichier de configuration <span class="fichier">mon-edition_config_inc.xml</span>  :</p>
+<ul>
+<li>Project ID ? </li>
+</ul>
+<blockquote>
+<p>Saisir le nom du site, sans espace ni caractères spéciaux.    </p>
+</blockquote>
+<pre><code>  Exemple : monedition
+</code></pre>
+<ul>
+<li>XML Project type (tei, ead, ...) ?</li>
+</ul>
+<blockquote>
+<p>Saisir tei ou ead</p>
+</blockquote>
+<pre><code>  Exemple : tei
+</code></pre>
+<ul>
+<li>Database path ?</li>
+</ul>
+<blockquote>
+<p>Renseigner le nom de la base de données XML (sans diacritique, sans espace)</p>
+</blockquote>
+<pre><code>  Exemple : monedition
+</code></pre>
+<ul>
+<li>XML sources path ?</li>
+</ul>
+<blockquote>
+<p>Renseigner le chemin complet vers le dossier où se trouvent les sources XML : ce dossier ne doit contenir que des fichiers XML (aucun autre type de fichiers), et uniquement les fichiers XML qui doivent être versés dans la base.</p>
+</blockquote>
+<pre><code>  Exemple : /Users/nom/Documents/fichiersbasex/tei/sources/
+</code></pre>
+<ul>
+<li>Please type your BaseX login/password :</li>
+</ul>
+<blockquote>
+<p>Nom d’utilisateur et mot de passe de la base de données XML BaseX ; <strong>par défaut admin / admin</strong></p>
+</blockquote>
+<pre><code>     - Username: admin
+     - Password: admin
+</code></pre>
+<p>=&gt; Vous pouvez enfin vous connecter en local à l’adresse : <code>http://localhost:[numero-de-port]/mon-edition</code></p>
+<blockquote>
+<p>Si le port n’est pas celui par défaut, il faut renseigner dans l’adresse celui modifié dans le fichier <span class="fichier">jetty.xml</span> (voir <a href="../install/#procedure">étape 12 de la procédure d’installation</a>)</p>
+</blockquote>
+<p>Exemple pour un port par défaut : <a href="http://127.0.0.1:8984/max_tei_demo">http://localhost:8984/max_tei_demo</a></p>
+<p>Les éditions (<strong>max_tei_demo</strong>, <strong>max_ead_demo</strong>, <strong>mon-edition</strong>, etc.) sont créées dans un dossier <span class="dossier">editions</span> de MaX.</p>
+<p>Si vous suivez les recommandations d’organisation des dossiers décrites dans la partie <a href="../install#recommandations_architecture">Recommandations d’architecture</a> :</p>
+<ol>
+<li>Dans votre dossier <span class="dossier">[projet]</span>, créer un dossier <span class="dossier">[projet-]editions</span>.</li>
+<li>Déplacer chaque nouvelle édition créée, qui se trouve dans le dossier <span class="dossier">editions</span> du dossier <span class="dossier">[projet-]MaX</span>, vers le dossier <span class="dossier">[projet-]editions</span> que vous venez de créer (le dossier ne doit pas être copié mais bien déplacé).</li>
+<li>En vous plaçant au moyen du terminal (ou de l’invite de commande) dans le dossier <span class="dossier">editions</span> de <span class="dossier">[projet-]MaX</span> créer un lien symbolique entre ce dossier  et l’édition qui se trouve dans le dossier <span class="dossier">[projet-]editions</span>.</li>
+</ol>
+<p><code>cd [projet-]MaX/editions</code>  <br />
+<code>ln -s ../../[projet-]editions/max_tei_demo .</code></p>
+<p>ou </p>
+<p><code>ln -s ../../[projet-]editions/mon-edition .</code></p>
+<p>Les configurations des éditions sont faites dans les dossiers :</p>
+<ul>
+<li><span class="dossier">editions</span> ;</li>
+<li><span class="dossier">plugins</span> (quand ceux-ci sont activés).</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="files.html" class="btn btn-neutral float-right" title="Organisation des dossiers et des fichiers">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="install.html" class="btn btn-neutral" title="Installation"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="install.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="files.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="javascripts/mermaid.min.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

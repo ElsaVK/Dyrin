@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<properties>
+  <!-- Menu et sous-menu -->
+    <entry key="menu.accueil">Accueil</entry>
+    <entry key="menu.sommaire">Sommaire</entry>
+    <entry key="menu.index">Index</entry>
+    <!-- sous entrées de l'index -->
+      <entry key="menu.index_lieux">Lieux</entry>
+      <entry key="menu.index_personnes">Personnes</entry>
+      <entry key="menu.index_auteurs">Auteurs</entry>
+      <entry key="menu.index_artistes">Artistes</entry>
+      <entry key="menu.index_themes">Themes</entry>
+      <entry key="menu.index_zoonymes">Zoonymes</entry>
+      <!-- fin sous-entrées de l'index-->
+    <entry key="menu.about">A propos</entry>
+    <entry key="menu.contacts">Contacts</entry>
+</properties>

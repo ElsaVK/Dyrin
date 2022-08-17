@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Menu - MaX - Documentation</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="css/mermaid.css" rel="stylesheet" />
+  <link href="css/test.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Menu";
+    var mkdocs_page_input_path = "menu.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> MaX - Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Documentation d’utilisation de MaX</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="script.html">Création d'une édition</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="files.html">Organisation des dossiers et des fichiers</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="config.html">Configuration</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="features.html">Fonctionnement</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="basex.html">Fichiers XML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="static_pages.html">Pages HTML statiques</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="home_page.html">Page d’accueil</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="menu.html">Menu</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#le-fichier-menuxml">Le fichier menu.xml</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#modification-de-la-mise-en-forme-du-menu">Modification de la mise en forme du menu</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#menu-a-gauche">Menu à gauche</a>
+    </li>
+        </ul>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="toc.html">Sommaires</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="text.html">Textes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="layout.html">Gabarits, mise en page</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="i18n.html">Fichier i18n</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="overriding.html">Surcharges</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="metadata.html">Métadonnées HTML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="production.html">Mise en production</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">MaX - Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Menu</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="menu">Menu</h1>
+<h2 id="le-fichier-menuxml">Le fichier menu.xml</h2>
+<p>Les différents onglets et sous-onglets d’une édition se configurent dans le fichier <span class="fichier">menu.xml</span> qui est généré, dès la création d’une édition avec l’outil <em>max.sh</em>, dans le dossier <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span> (cf. <a href="../script/#deploiement-dune-nouvelle-edition">Déploiement d’une nouvelle édition</a>).</p>
+<div class="mermaid">
+graph LR;
+    A-->B
+    B-->D
+    A["projet-editions"]
+    B["mon-edition"]
+    D("menu.xml")
+</div>
+
+<p>Ce fichier <span class="fichier">menu.xml</span> permet d’ajouter autant d’onglets et sous-onglets qu’il est nécessaire. </p>
+<p>Ce fichier, dont l’élément racine est <code>&lt;menu&gt;</code>, contient un ou plusieurs éléments <code>&lt;entry&gt;</code>, correspondant à autant d’onglets ou de sous-onglets.</p>
+<p>L’élément <code>&lt;entry&gt;</code> contient un élément <code>&lt;id&gt;</code> pour indiquer l’identifiant et un élément <code>&lt;target&gt;</code> pour mentionner la cible, à savoir la fin de l’URL <code>nom.html</code>. Il peut contenir l’attribut <code>@type</code> avec la valeur <code>main</code>, pour désigner chaque entrée principale.</p>
+<p>L’élément <code>&lt;id&gt;</code> peut être spécifié dans <a href="../i18n">le fichier i18n</a>.</p>
+<p>L’élément <code>&lt;target&gt;</code> permet tout aussi bien de pointer vers : <br/>
+- une page HTML statique (voir <a href="../static_pages">Pages statiques</a>), <br/>
+- une URL de consultation spécifique, appelée également <a href="../glossary/#r">route*</a>, qui déclenche une fonction Xquery (<a href="../features">voir Fonctionnement</a>), <br/>
+- un lien externe.</p>
+<p>Dans l’exemple ci-dessous, le menu contient deux entrées principales (attribut <code>@type="main"</code>) : <em>accueil</em> et <em>sommaire</em>.</p>
+<ul>
+<li><em>accueil.html</em> pointe (généralement) vers le fragment HTML statique <span class="fichier">accueil.frag.html</span> (cf. <a href="../home_page">supra</a>) ; </li>
+<li><em>sommaire.html</em> pointe vers la route qui permet de générer le sommaire d’un document (cf. <a href="../toc/#sommaire-dune-edition">supra</a>).</li>
+</ul>
+<pre><code>&lt;menu&gt;
+    &lt;entry type=&quot;main&quot;&gt;
+        &lt;id&gt;accueil&lt;/id&gt;
+        &lt;target&gt;accueil.html&lt;/target&gt;
+    &lt;/entry&gt;
+    &lt;entry type=&quot;main&quot;&gt;
+        &lt;id&gt;sommaire&lt;/id&gt;
+        &lt;target&gt;sommaire.html&lt;/target&gt;
+    &lt;/entry&gt;
+&lt;/menu&gt;
+</code></pre>
+<p>Pour créer des sous-entrées (sous-menus) au sein de l’élément <code>&lt;entry type="main"&gt;</code>, un ou plusieurs éléments <code>&lt;entry&gt;</code> sont ajoutés : chacun possède un identifiant – élément <code>&lt;id&gt;</code> – ainsi qu’une cible – élément <code>&lt;target&gt;</code>.</p>
+<p>Dans l’exemple ci-contre, le menu contient deux entrées principales <em>accueil</em> et <em>sommaire</em>. L’entrée <em>accueil</em> pointe vers l’URL <code>http://[host]:[port]/[edition]/accueil.html</code> et contient deux sous-entrées <em>introduction_oeuvre</em> et <em>presentation_oeuvre</em> dont les URL sont respectivement  :</p>
+<ul>
+<li><code>http://[host]:[port]/[edition]/introduction_oeuvre.html</code>, </li>
+<li><code>http://[host]:[port]/[edition]/presentation_oeuvre.html</code>.</li>
+</ul>
+<p>Ces pages HTML (<code>introduction_oeuvre.html</code> et <code>presentation_oeuvre.html</code>) pourront être créées en suivant la documentation <a href="../static_pages">Pages statiques</a>.</p>
+<p>L’entrée <em>sommaire</em> pointe vers l’URL <code>http://[host]:[port]/[edition]/sommaire.html</code>.</p>
+<pre><code>&lt;menu&gt;
+    &lt;entry type=&quot;main&quot; default=&quot;true&quot;&gt;
+        &lt;id&gt;home&lt;/id&gt;
+        &lt;target&gt;accueil.html&lt;/target&gt;
+        &lt;!--Sous-entrées pour accueil--&gt;
+        &lt;entry&gt;
+            &lt;id&gt;introduction_oeuvre&lt;/id&gt;
+            &lt;target&gt;introduction_oeuvre.html&lt;/target&gt;
+        &lt;/entry&gt;
+        &lt;entry&gt;
+            &lt;id&gt;presentation_oeuvre&lt;/id&gt;
+            &lt;target&gt;presentation_oeuvre.html&lt;/target&gt;
+        &lt;/entry&gt;
+        &lt;!--Fin Sous-entrées pour accueil--&gt;
+    &lt;/entry&gt;
+    &lt;entry type=&quot;main&quot;&gt;
+        &lt;id&gt;sommaire&lt;/id&gt;
+        &lt;target&gt;sommaire.html&lt;/target&gt;
+    &lt;/entry&gt;
+&lt;/menu&gt;
+</code></pre>
+<p>L’affichage du texte du menu est géré par un fichier de ressources d’internationalisation (appelé <a href="../glossary/#i">i18n*</a>), qui permettra à termes de gérer l’adaptation de l’interface à des langues différentes.  Voir <a href="../i18n">le fichier i18n</a>.</p>
+<p>Ce fichier par défaut se trouve dans <span class="dossier">[projet-]MaX</span>/<span class="dossier">ui</span>/<span class="dossier">i18n</span>/<span class="fichier">i18n.xml</span>. Il peut être surchargé (cf. <a href="../overriding">infra</a>).</p>
+<h2 id="modification-de-la-mise-en-forme-du-menu">Modification de la mise en forme du menu</h2>
+<p>Le menu HTML est le résultat de la transformation du fichier <span class="dossier">[projet-]edition</span>/<span class="fichier">menu.xml</span> par la feuille XSL par défaut placée dans <span class="dossier">[projet-]MaX</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">core</span>/<span class="fichier">menu.xsl</span>.  <br />
+Une feuille de transformation, placée dans le dossier <span class="dossier">mon-edition</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">core</span>/<span class="fichier">menu.xsl</span>, peut remplacer celle disponible par défaut. </p>
+<p>Trois paramètres sont disponibles dans cette XSL :</p>
+<ul>
+<li><strong>baseURI</strong> : baseURI du projet,</li>
+<li><strong>selectedTarget</strong> : entrée de menu courante (valeur d’un des attributs @target).`</li>
+<li><strong>projectId</strong> : identifiant de l’édition,</li>
+</ul>
+<h3 id="menu-a-gauche">Menu à gauche</h3>
+<p>Pour configurer un menu à gauche dans la version de démonstration <strong>max_tei_demo</strong>, il est nécessaire d’activer la surcharge de transformation du menu en renommant le fichier <span class="dossier">editions</span>/<span class="dossier">max_tei_demo</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">core</span>/<span class="fichier">menu_left.xsl</span> en <span class="dossier">editions</span>/<span class="dossier">max_tei_demo</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">core</span>/<span class="fichier">menu.xsl</span>. </p>
+<p>Faire de même avec le template HTML, en renommant le fichier <span class="dossier">editions</span>/<span class="dossier">max_tei_demo</span>/<span class="dossier">ui</span>/<span class="dossier">templates</span>/<span class="fichier">template_left.html</span> en <span class="dossier">editions</span>/<span class="dossier">max_tei_demo</span>/<span class="dossier">ui</span>/<span class="dossier">templates</span>/<span class="fichier">template.html</span>. </p>
+<p>Lire la section <a href="../overriding#menu">surcharges</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="toc.html" class="btn btn-neutral float-right" title="Sommaires">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="home_page.html" class="btn btn-neutral" title="Page d’accueil"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="home_page.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="toc.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="javascripts/mermaid.min.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

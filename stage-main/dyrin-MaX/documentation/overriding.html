@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Surcharges - MaX - Documentation</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="css/mermaid.css" rel="stylesheet" />
+  <link href="css/test.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Surcharges";
+    var mkdocs_page_input_path = "overriding.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> MaX - Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Documentation d’utilisation de MaX</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="script.html">Création d'une édition</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="files.html">Organisation des dossiers et des fichiers</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="config.html">Configuration</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="features.html">Fonctionnement</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="basex.html">Fichiers XML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="static_pages.html">Pages HTML statiques</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="home_page.html">Page d’accueil</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="toc.html">Sommaires</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="text.html">Textes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="layout.html">Gabarits, mise en page</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="i18n.html">Fichier i18n</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="overriding.html">Surcharges</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#accueil">Accueil</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#menu">Menu</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sommaires">Sommaires</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#sommaire-dune-edition">Sommaire d’une édition</a>
+    </li>
+    <li class="toctree-l3"><a class="reference internal" href="#sommaire-dun-document">Sommaire d’un document</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#texte">Texte</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#barre-de-navigation">Barre de navigation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#mise-en-page">Mise en page</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#metadonnees-html">Métadonnées HTML</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="metadata.html">Métadonnées HTML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="production.html">Mise en production</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">MaX - Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Surcharges</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="surcharges">Surcharges</h1>
+<p>Les surcharges permettent de modifier le comportement par défaut de MaX.</p>
+<p>Dans certains contextes d’affichage, le <a href="../glossary/#c">contrôleur*</a> de MaX va vérifier si les fichiers xsl et xq existent dans le dossier <span class="dossier">[projet-]editions/[edition]/[ui ou xq]</span>. Si tel est le cas il va les appliquer, sinon il va utiliser le fichier par défaut du cœur de MaX (dossier <span class="dossier">[projet-]MaX/[ui ou rxq]</span>). <br/>
+Ainsi pour modifier le comportement d’un fichier qui se trouve dans le cœur de MaX (<span class="dossier">[projet-]MaX</span>), il faut le copier et le coller dans le dossier <span class="dossier">[projet-]editions/[edition]</span>. C’est donc ce fichier que l’on modifiera et qui permettra de faire une <a href="../glossary/#s">surcharge*</a>.</p>
+<h2 id="accueil">Accueil</h2>
+<p>Éditer le fichier <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">fragments</span>/<span class="fichier">accueil.frag.html</span> pour modifier la page d’accueil d’une édition.</p>
+<p>Voir <a href="../home_page">Page d’accueil</a></p>
+<h2 id="menu">Menu</h2>
+<p>Le menu HTML est le résultat de la transformation du fichier <span class="dossier">[projet-]editions/[edition]</span>/<span class="fichier">menu.xml</span> par la feuille XSL par défaut, <span class="fichier">menu.xsl</span>, placée dans <span class="dossier">[projet]-MaX</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">core</span>.</p>
+<p>Il est possible de modifier ce comportement par défaut, en créant une XSL nommée <span class="fichier">menu.xsl</span>, placée dans le dossier  <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">core</span>. 
+Trois paramètres sont disponibles dans cette XSL :</p>
+<ul>
+<li><strong>projectId</strong> : identifiant du projet,</li>
+<li><strong>baseURI</strong> : baseURI du projet,</li>
+<li><strong>selectedTarget</strong> : entrée de menu courante (valeur d’un des attributs @target).</li>
+</ul>
+<p>Voir <a href="../menu">Menu</a></p>
+<h2 id="sommaires">Sommaires</h2>
+<h3 id="sommaire-dune-edition">Sommaire d’une édition</h3>
+<p>Pour modifier le sommaire d’une édition, il est possible de :</p>
+<ul>
+<li>modifier la XQuery, en créant un fichier <span class="fichier">toc.xq</span> dans le dossier <span class="dossier">[projet-]editions/[edition]/xq</span> ;</li>
+<li>modifier la XSL nommée <span class="fichier">toc.xsl</span> transformant ces éléments au format HTML dans le dossier <span class="dossier">[projet-]editions/[edition]/ui/xsl/core</span>.</li>
+</ul>
+<p>Voir <a href="../toc/#sommaire-dune-edition">Sommaire d’une édition</a></p>
+<h3 id="sommaire-dun-document">Sommaire d’un document</h3>
+<p>Pour modifier le comportement par défaut de la création du sommaire d’un document, il est possible de :</p>
+<ul>
+<li>modifier la XQuery, en créant un fichier <span class="fichier">document_toc.xq</span> dans le dossier <span class="dossier">[projet-]editions/[edition]/xq</span> ;</li>
+<li>modifier la XSL transformant ces éléments au format HTML, en créant un fichier nommé <span class="fichier">document_toc.xsl</span> placé dans le dossier <span class="dossier">[projet-]editions/[edition]/ui/xsl/[ead ou tei]</span>.</li>
+</ul>
+<p>Voir <a href="../toc/#sommaire-dun-document">Sommaire d’un document</a></p>
+<h2 id="texte">Texte</h2>
+<p>Pour modifier l’affichage par défaut des éléments de votre fichier XML, il faut créer une XSL appelée  <span class="fichier">text_hook.xsl</span>, placée dans le dossier <span class="dossier">[projet-]editions/[edition]/ui/xsl/[ead ou tei]</span>.</p>
+<p>Voir <a href="../text/#textes">Textes</a></p>
+<h2 id="barre-de-navigation">Barre de navigation</h2>
+<p>Le comportement par défaut de la barre de navigation est géré par le fichier <span class="fichier">nav_bar.xsl</span>, placé dans le dossier <span class="dossier">[projet-]MaX/ui/xsl/tei</span>. <br/>
+On peut surcharger cette feuille de transformation en créant un fichier <span class="fichier">nav_bar.xsl</span>, placé dans le dossier <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">tei</span>.</p>
+<p>Voir <a href="../text/#barre-de-navigation">Texte, Barre de navigation</a>.</p>
+<h2 id="mise-en-page">Mise en page</h2>
+<p>Le template de mise en page par défaut se trouve dans <span class="dossier">[projet-]MaX</span>/<span class="dossier">ui</span>/<span class="dossier">templates</span>/<span class="fichier">[tei ou ead].html</span>. <br/>
+Il est possible de remplacer cette mise en page en créant son propre template. Pour cela, on ajoute un fichier nommé <span class="fichier">template.html</span> dans le dossier <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">ui</span>/<span class="dossier">templates</span>.</p>
+<p>Voir <a href="../layout/#text">Gabarits, mise en page</a></p>
+<h2 id="metadonnees-html">Métadonnées HTML</h2>
+<p>Le contenu des métadonnées d’une édition est modifiable en créant un fichier <span class="fichier">metadata.xq</span> dans le dossier <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">xq</span>.</p>
+<p>Voir <a href="../metadata">Métadonnées HTML</a></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="plugins.html" class="btn btn-neutral float-right" title="Plugins">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="i18n.html" class="btn btn-neutral" title="Fichier i18n"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="i18n.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="plugins.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="javascripts/mermaid.min.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

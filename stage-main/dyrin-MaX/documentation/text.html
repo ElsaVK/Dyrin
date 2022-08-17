@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Textes - MaX - Documentation</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="css/mermaid.css" rel="stylesheet" />
+  <link href="css/test.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Textes";
+    var mkdocs_page_input_path = "text.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> MaX - Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Documentation d’utilisation de MaX</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="script.html">Création d'une édition</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="files.html">Organisation des dossiers et des fichiers</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="config.html">Configuration</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="features.html">Fonctionnement</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="basex.html">Fichiers XML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="static_pages.html">Pages HTML statiques</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="home_page.html">Page d’accueil</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="toc.html">Sommaires</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="text.html">Textes</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#barre-de-navigation">Barre de navigation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#options-de-lecture">Options de lecture</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#pied-de-page">Pied de page</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#alignement">Alignement</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#recuperation-et-affichage-de-fragments-hors-contexte">Récupération et affichage de fragments hors contexte</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#marquage-doccurrences-et-focus-pour-des-sources-en-tei">Marquage d’occurrences et focus (pour des sources en TEI)</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="layout.html">Gabarits, mise en page</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="i18n.html">Fichier i18n</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="overriding.html">Surcharges</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="metadata.html">Métadonnées HTML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="production.html">Mise en production</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">MaX - Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Textes</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="textes">Textes</h1>
+<p>La consultation des textes se fait aux URLs suivantes :</p>
+<ul>
+<li>consultation d’un fragment identifié  sur un document XML : 
+  <code>http://[host]:[port]/[edition]/[document].xml/[id].html</code> </li>
+<li>consultation d’un document XML complet
+  <code>http://[host]:[port]/[edition]/doc/[document].html]</code></li>
+<li>consultation « isolée », pour afficher le texte seul en dehors du site (c’est-à-dire sans menu, barre de navigation, etc., par exemple pour l’afficher dans une pop-up) : <code>http://[host]:[port]/[edition]/fragment_html/[id].html</code>. 
+ L’ajout du paramètre <code>?wrap=true</code> offre une consultation dans une page HTML complète (avec appels aux css et js du site) :
+  <code>http://[host]:[port]/[edition]/fragment_html/[id].html?wrap=true</code> </li>
+</ul>
+<p>La feuille de transformation appliquée par défaut se trouve dans : </p>
+<ul>
+<li>pour la TEI : <span class="dossier">[projet-]MaX</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">tei</span>/<span class="fichier">tei.xsl</span> ;</li>
+<li>pour l’EAD : <span class="dossier">[projet-]MaX</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">ead</span>/<span class="fichier">ead.xsl</span>.</li>
+</ul>
+<p>La <a href="../overriding">surcharge</a> de cette transformation se fait en rédigeant une XSL nommée <span class="fichier">text_hook.xsl</span>, placée dans le dossier 
+<span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">[ead ou tei]</span>.</p>
+<div class="mermaid">
+graph LR;
+    A-->B
+    B-->C
+    C-->D
+    D-->E
+    E-->F
+    A["projet-editions"]
+    B["mon-edition"]
+    C["ui"]
+    D["xsl"]
+    E["ead ou tei"]
+    F("text_hook.xsl")
+</div>
+
+<p>Cette feuille de transformation dicte au moteur d’affichage de quelle manière les éléments des documents XML doivent être affichés (dans quel ordre, si certains éléments doivent être masqués, etc.). C’est ce fichier qui permet de régir ce que l’utilisateur verra lorsqu’il consultera, sur MaX, un document XML ou un fragment de document.</p>
+<h2 id="barre-de-navigation">Barre de navigation</h2>
+<p><img alt="Barre de navigation" src="images/nav_text.png" /></p>
+<p>Lors de l’affichage du texte d’un fragment <strong>en TEI</strong>, la barre de navigation (sous forme de liste déroulante) permet de naviguer de fragment en fragment.  <br />
+Les entrées de cette liste déroulante sont par défaut identiques aux entrées de la table des matières du document en cours de consultation.</p>
+<p>La feuille de transformation appliquée par défaut se trouve dans : <span class="dossier">[projet-]MaX</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">tei</span>/<span class="fichier">nav_bar.xsl</span>.</p>
+<p>Il est possible de modifier son comportement par défaut par une <a href="../overriding">surcharge</a>. Pour cela, on rédige une XSL nommée <span class="fichier">nav_bar.xsl</span>, dans le dossier <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">tei</span>.</p>
+<p>Celle-ci recevra en entrée le même arbre XML que <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">ui</span>/<span class="dossier">xsl</span>/<span class="dossier">tei</span>/<span class="fichier">document_toc.xsl</span> ainsi que les paramètres <strong>$baseuri</strong>, <strong>$project</strong> accompagnés de :</p>
+<ul>
+<li><strong>$selectedId</strong> : identifiant du fragment en cours de consultation</li>
+<li><strong>$nextArrow</strong> : 'true' s’il existe des fragments suivant le fragment courant</li>
+<li><strong>$prevArrow</strong> : 'true' s’il existe des fragments précédant le fragment courant</li>
+</ul>
+<h2 id="options-de-lecture">Options de lecture</h2>
+<p><img alt="Options de lecture" src="images/optionsLecture.png" /></p>
+<p>Les options de lecture permettent au lecteur d’afficher ou masquer (<em>via</em> des cases à cocher) certains éléments textuels (les sauts de page ou de ligne de la version manuscrite par exemple).
+Ces éléments doivent être déclarés dans le fichier de configuration de l’édition : fichier <span class="fichier">[mon-edition]_config_inc.xml</span> dans le dossier <span class="dossier">[projet-]editions/[mon-projet]</span>.</p>
+<p>Exemple pour proposer l’option afficher/masquer les sauts de page (éléments <code>&lt;pb/&gt;</code>) et les sauts de ligne (éléments <code>&lt;lb/&gt;</code>) dans un document TEI :</p>
+<pre><code>[...]
+    &lt;textOptions&gt;
+     &lt;checkboxOptions&gt;
+       &lt;targetClass&gt;pb&lt;/targetClass&gt;
+       &lt;targetClass&gt;lb&lt;/targetClass&gt;
+     &lt;/checkboxOptions&gt;
+    &lt;/textOptions&gt;
+ [...]
+</code></pre>
+<p>Les éléments TEI <code>&lt;pb&gt;</code> sont transformés en noeud HTML <code>&lt;span&gt;</code> de classe <code>.pb</code>, ils pourront alors être affichés ou masqués depuis l’interface de consultation.</p>
+<p>Il est possible de <a href="../menu/#fichier-i18n">surcharger le fichier i18n.xml</a> afin de spécifier l’option d’affichage. Par exemple :</p>
+<pre><code>&lt;entry key=&quot;pb&quot;&gt;Afficher les sauts de page&lt;/entry&gt;
+&lt;entry key=&quot;lb&quot;&gt;Afficher les sauts de ligne&lt;/entry&gt;
+</code></pre>
+<p><code>pb</code> et <code>lb</code> étant les éléments TEI déclarés dans la balise <code>targetClass</code> du fichier <span class="fichier">[mon-edition]_config_inc.xml</span> dans l’exemple ci-dessus.</p>
+<p>Pour les éléments plus complexes, comme l’affichage de certains éléments à la place d’autres, avec l’utilisation de la balise <code>&lt;choice&gt;</code> notamment, des plugins ont été développés. C’est le cas des plugins <strong>ajout</strong>, <strong>abréviation</strong>, <strong>normalisation</strong>, etc. Voir <a href="../plugins">les plugins</a>.</p>
+<h2 id="pied-de-page">Pied de page</h2>
+<p>Un pied de page par défaut est configuré dans MaX. Il est appelé dans le template de mise page (voir <a href="../layout/#mise-en-page">gabarits, mise en page</a>).</p>
+<p>Pour le modifier, il suffit d'ajouter un fichier <span class="fichier">footer.frag.html</span> dans le dossier <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">fragments</span> (voir <a href="../static_pages">Pages HTML statiques</a>).</p>
+<h2 id="alignement">Alignement</h2>
+<p>Cette fonctionnalité permet la consultation d’un fragment en deux versions alignées. Chaque couple de fragments alignés doit respecter une nomenclature d’identification : <code>[prefixlang1][identifiant]</code> et <code>[prefixlang2][identifiant]</code>. Les parties de texte qui sont à aligner doivent donc avoir un identifiant identique avec le préfixe de la langue. </p>
+<pre><code>Exemple : fr_p1 et lat_p1
+</code></pre>
+<p>La déclaration des documents qui doivent être consultés avec l’alignement se fait dans le fichier de configuration de l’édition <span class="fichier">mon-edition_config_inc.xml</span>.</p>
+<div class="mermaid">
+graph LR;
+    A-->B
+    B-->C
+    A["projet-editions"]
+    B["mon-edition"]
+    C("mon-edition_config_inc.xml")
+</div>
+
+<p>Il faut alors préciser le document (attribut <code>@document</code>) ainsi que les préfixes d’identifications utilisés (attributs <code>@first-prefix</code> et <code>@second-prefix</code>) dans les sources. L’attribut <code>@first-prefix</code> correspondant à la langue qui sera affichée en colonne de gauche.</p>
+<p>Cela suppose que les deux fichiers portent le même nom, avec un préfixe de langue différent.</p>
+<p>Par exemple :</p>
+<pre><code class="language-xml">&lt;alignment document=&quot;FR_Ramusio.xml&quot; first-prefix=&quot;fr&quot; second-prefix=&quot;it&quot;/&gt;
+</code></pre>
+<p><img src="../images/ramusio.png" alt="alignement pour ramusio" style="width:80%; border:2px solid #bbb" /></p>
+<pre><code class="language-xml">&lt;!-- Le fichier FR_Ramusio.xml --&gt;
+
+&lt;p n=&quot;10&quot; xml:id=&quot;fr_Ramu_2_5_p1&quot;&gt;La terre du Brésil est située au-delà de l’équinoxiale
+dans la partie australe vers l’Occident, distante de la ligne diamétrale de 10 degrés de 
+longitude et, commençant à 3 degrés de latitude australe, elle s’étend jusqu’à 52 degrés 
+vers le pôle antarctique, où se trouve le cap des onze mille vierges, à l’entrée du détroit 
+dit de Magellan [...]
+</code></pre>
+<pre><code class="language-xml">&lt;!-- Le fichier IT_Ramusio.xml --&gt;
+
+&lt;p n=&quot;10&quot; xml:id=&quot;it_Ramu_2_5_p1&quot;&gt;La terra del Brafìl è posta oltra l’equinottiale 
+nella parte australe verso occidente, distante dalla linea diametrale gradi dieci di 
+longitudine, &amp;amp; cominciando da tre gradi di latitudine australe corre fino 
+à cinquantadua verso il polo antartico, doue è il capo delle vndici mila vergini nell’entrare 
+del stretto detto di Magallanes [...] 
+</code></pre>
+<h2 id="recuperation-et-affichage-de-fragments-hors-contexte">Récupération et affichage de fragments hors contexte</h2>
+<p>Lors de la consultation d’un fragment, il peut s’avérer nécessaire d’afficher du contenu issu d’un ou plusieurs autres fragments.</p>
+<p>L’ajout d’une XQUERY nommée <span class="fichier">text_hook.xq</span> dans le dossier  <span class="dossier">[projet-]editions</span>/<span class="dossier">[edition]</span>/<span class="dossier">xq</span> offre cette fonctionnalité. Celle-ci sera automatiquement exécutée lors de la consultation d’un fragment ou d’un document complet. </p>
+<div class="mermaid">
+graph LR;
+    A-->B
+    B-->C
+    C-->D
+    A["projet-editions"]
+    B["mon-edition"]
+    C["xq"]
+    D("text_hook.xq")
+</div>
+
+<p>Il est également possible d’intégrer une transformation XSL au sein de cette fonction XQUERY.
+Cette fonction reçoit les paramètres <code>$baseURI</code>, <code>$dbPath</code>, <code>$project</code> et <code>$doc</code>.</p>
+<p>Exemple :</p>
+<pre><code>declare variable $baseURI external;
+declare variable $dbPath external; (:path du document dans la db:)
+declare variable $project external; (: id du projet :)
+declare variable $doc external; (: nom du document :)
+
+let $document := doc($dbPath || '/' || $doc)
+return base-uri($document)
+
+</code></pre>
+<h2 id="marquage-doccurrences-et-focus-pour-des-sources-en-tei">Marquage d’occurrences et focus (pour des sources en TEI)</h2>
+<p>Il est possible de mettre en évidence les occurences d’une chaîne de caractères et/ou de mettre le focus sur un fragment identifié d’une page à l’aide des paramètres <strong>search</strong> et <strong>focus</strong> pour les 2 URLs (ou routes) suivantes :</p>
+<ul>
+<li>consultation d’un fragment identifié : 
+  <code>http://[host]:[port]/[edition]/[document].xml/[id].html</code></li>
+<li>consultation d’un document complet :  <br />
+<code>http://[host]:[port]/[edition]/doc/[document].html</code></li>
+</ul>
+<p>Le marquage d’occurrences se fait par l’ajout du paramètre <strong>search</strong> :</p>
+<p><code>http://[host]:[port]/[edition]/[document].xml/[id].html?search=[texte recherché]</code></p>
+<p>Le focus sur un fragment identifié se fait par l’ajout du paramètre <strong>focus</strong> :</p>
+<p><code>http://[host]:[port]/[edition]/[document].xml/[id].html?focus=[identifiant fragment]</code></p>
+<p>Il est possible de combiner les deux paramètres :</p>
+<p><code>http://[host]:[port]/[edition]/[document].xml/[id].html?search=[texte recherché]&amp;focus=[identifiant fragment]</code></p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="layout.html" class="btn btn-neutral float-right" title="Gabarits, mise en page">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="toc.html" class="btn btn-neutral" title="Sommaires"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="toc.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="layout.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="javascripts/mermaid.min.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

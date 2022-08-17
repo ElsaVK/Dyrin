@@ -1,0 +1,649 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Plugins - MaX - Documentation</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="css/mermaid.css" rel="stylesheet" />
+  <link href="css/test.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Plugins";
+    var mkdocs_page_input_path = "plugins.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> MaX - Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Documentation d’utilisation de MaX</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="script.html">Création d'une édition</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="files.html">Organisation des dossiers et des fichiers</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="config.html">Configuration</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="features.html">Fonctionnement</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="basex.html">Fichiers XML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="static_pages.html">Pages HTML statiques</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="home_page.html">Page d’accueil</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="toc.html">Sommaires</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="text.html">Textes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="layout.html">Gabarits, mise en page</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="i18n.html">Fichier i18n</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="overriding.html">Surcharges</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="plugins.html">Plugins</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#fonctionnement-des-plugins">Fonctionnement des plugins</a>
+        <ul>
+    <li class="toctree-l3"><a class="reference internal" href="#plugins-et-dependances-javascript">Plugins et dépendances Javascript</a>
+    </li>
+        </ul>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#abreviation">Abréviation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ajout">Ajout</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#apparat-critique">Apparat critique</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#breadcrumb-fil-dariane">Breadcrumb (Fil d’Ariane)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#correction">Correction</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#diplomatique">Diplomatique</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ead-basket">EAD basket</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ead-to-pdf">EAD to PDF</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ead-metadata">EAD metadata</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#index">Index</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#normalisation">Normalisation</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#recherche-ead-ead_search">Recherche EAD (ead_search)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#recherche-tei-search">Recherche TEI (search)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#side-toc-ead">Side toc (EAD)</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#sources-export">Sources export</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#tei-to-pdf">TEI to PDF</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#visionneuse-dimages-img_viewer">Visionneuse d’images (img_viewer)</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="metadata.html">Métadonnées HTML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="production.html">Mise en production</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">MaX - Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Plugins</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="plugins">Plugins</h1>
+<p>Un plugin est une brique logicielle proposant une fonctionnalité supplémentaire au noyau de l’application MaX. Il est activé (désactivé par défaut) pour une ou plusieurs éditions numériques. Il peut être constitué de ressources RestXQ, XSL, Javascript, CSS... </p>
+<p>MaX propose un ensemble de plugins placés dans le dossier <span class="dossier">plugins</span>. Le script <code>max.sh</code> permet l’activation/désactivation de ces plugins.</p>
+<ul>
+<li>Se placer dans le dossier <span class="dossier">tools</span> : </li>
+</ul>
+<p><code>cd le/chemin/vers/le/projet/[projet-]MaX/tools</code></p>
+<ul>
+<li>lister les plugins disponibles</li>
+</ul>
+<p><code>./max.sh --list-plugins</code></p>
+<p>=&gt; Si le message suivant s’affiche <code>Please install BaseX or set $BASEX_PATH environment variable</code>, il faut alors indiquer le chemin vers le dossier contenant l’application BaseX au moyen de la commande suivante :</p>
+<p><code>export BASEX_PATH=../../[projet-]basex</code> </p>
+<p>Puis refaire <code>./max.sh --list-plugins</code></p>
+<p>Le terminal affiche alors la liste des plugins disponibles, ceux inutilisés et ceux activés.</p>
+<hr />
+<pre style="font-size:80%;">
+    Nota Bene
+    Si certains plugins apparaissent déjà comme activés (enabled) alors que vous n’avez 
+    jamais lancé vous-même la procédure d’activation ci-dessous, il est nécessaire d’effectuer 
+    cette procédure d’activation pour que le plugin fonctionne.
+</pre>
+<hr />
+<ul>
+<li>Activer un plugin</li>
+</ul>
+<p><code>./max.sh --enable-plugin [plugin_name] [mon-edition]</code></p>
+<ul>
+<li>Désactiver un plugin</li>
+</ul>
+<p><code>./max.sh --disable-plugin [plugin_name] [mon-edition]</code></p>
+<p>Une fois activé <em>via</em> la ligne de commande <code>./max.sh</code>, le plugin est automatiquement inscrit dans le fichier de configuration de l’édition dans laquelle il a été autorisé : <span class="dossier">[projet-]editions/[edition]</span>/<span class="fichier">mon-edition_config_inc.xml</span>. Il se retrouve au sein d’un élément <code>&lt;plugin name='plugin_id'/&gt;</code> de la section <code>&lt;plugins/&gt;</code> de ce fichier. Dans chaque élément <code>&lt;plugin&gt;</code>, d’éventuels paramètres de configuration du plugin en question pourront être spécifiés. </p>
+<pre><code class="language-xml">&lt;plugins&gt;
+&lt;!-- exemple de l’activation du plugin breadcrumb --&gt;
+   &lt;plugin name=&quot;breadcrumb&quot;&gt;
+        &lt;parameters&gt;
+            &lt;parameter key=&quot;topLabel&quot; value=&quot;Sanctoral – Beata Maria&quot;/&gt;
+        &lt;/parameters&gt;
+    &lt;/plugin&gt;
+&lt;/plugins&gt;
+</code></pre>
+<h2 id="fonctionnement-des-plugins">Fonctionnement des plugins</h2>
+<p>Lors de la consultation d’un fragment, MaX exécute l’ensemble des Xquery des plugins actifs respectant la convention de nommage :
+<span class="dossier">plugins</span>/<span class="dossier">[NOM_PLUGIN]</span>/<span class="fichier">[NOM_PLUGIN].xq</span>.</p>
+<p>Par exemple : </p>
+<div class="mermaid">
+graph LR;
+    A-->B
+    B-->C
+    A["plugins"]
+    B["breadcrumb"]
+    C("breadcrumb.xq")
+</div>
+
+<p>Chaque XQuery reçoit en paramètres d’entrée les variables suivantes :</p>
+<ul>
+<li><strong>$baseURI</strong> : valeur de la variable baseURI,</li>
+<li><strong>$dbPath</strong> : nom de la base de données XML du projet,</li>
+<li><strong>$project</strong> : identifiant du projet,</li>
+<li><strong>$doc</strong> : document consulté,</li>
+<li><strong>$id</strong> : id consulté.</li>
+</ul>
+<p>Les résultats de ces appels sont renvoyés dans un nœud HTML <code>&lt;div class='plugins-wrapper'/&gt;</code> qui précède le contenu « textuel » XML transformé.</p>
+<p>Pour l’édition de démonstration par exemple, on obtient :</p>
+<pre><code class="language-html">[...]
+
+&lt;div class=&quot;plugins-wrapper&quot;&gt;
+  &lt;div class=&quot;apparat-witnesses&quot;&gt; ...&lt;/div&gt;
+  &lt;div id=&quot;breadcrumb&quot;&gt;...&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;div id=&quot;text&quot;&gt;
+    [...]
+&lt;/div&gt;
+
+[...]
+</code></pre>
+<p>Les XSL des plugins activés qui respectent la convention de nommage <span class="dossier">plugins</span>/<span class="dossier">[NOM_PLUGIN]</span>/<span class="fichier">[NOM_PLUGIN].xsl</span> sont automatiquement appliquées.</p>
+<p>Par exemple : </p>
+<div class="mermaid">
+graph LR;
+    A-->B
+    B-->C
+    A["plugins"]
+    B["breadcrumb"]
+    C("breadcrumb.xsl")
+</div>
+
+<h3 id="plugins-et-dependances-javascript">Plugins et dépendances Javascript</h3>
+<p>Certains plugins ont des dépendances vers des bibliothèques javascript (par exemple <em>img_viewer</em> requiert <em>OpenSeadragon</em>).
+Ces bibliothèques sont incluses dans chacun des plugins.</p>
+<h2 id="abreviation">Abréviation</h2>
+<p>Développer ou non les abréviations (balises <code>tei:ex</code> &amp; <code>tei:am</code>).</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;abreviation&quot;/&gt;
+</code></pre>
+<p><img alt="Abréviation" src="images/abr1.png" /></p>
+<ul>
+<li>
+<p>Exemple de texte sans l’option Abréviation :
+<img alt="Abréviation" src="images/abr2.png" /></p>
+</li>
+<li>
+<p>Exemple de texte avec l’option Abréviation :
+<img alt="Abréviation" src="images/abr3.png" /></p>
+</li>
+</ul>
+<h2 id="ajout">Ajout</h2>
+<p>Afficher/masquer les interventions, ajouts, suppressions (balises <code>tei:ad</code> &amp; <code>tei:del</code>), via les options de lecture.</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;ajout&quot;/&gt;
+</code></pre>
+<p><img alt="Ajout" src="images/ajout1.png" /></p>
+<ul>
+<li>
+<p>Exemple de texte sans l’option Ajout :
+<img alt="Ajout" src="images/ajout2.png" /></p>
+</li>
+<li>
+<p>Exemple de texte avec l’option Ajout (ajouts en orange, suppressions barrées en noir) :
+<img alt="Ajout" src="images/ajout3.png" /></p>
+</li>
+</ul>
+<h2 id="apparat-critique">Apparat critique</h2>
+<p>Affichage des différents témoins restitués par un apparat critique :</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;apparat_critique&quot;/&gt;
+</code></pre>
+<p>Une fenêtre proposant l’affichage par témoin apparaît si le fichier xml contient les balises <code>&lt;listWit&gt;&lt;witness @xml:id&gt;</code>.</p>
+<p><img alt="Apparat critique" src="images/apparat.png" /></p>
+<pre><code class="language-xml">&lt;!-- dans le fichier xml --&gt;
+
+&lt;listWit&gt;
+    &lt;witness n=&quot;utile&quot; xml:id=&quot;V&quot;&gt;
+        [...]
+    &lt;/witness&gt;
+     &lt;witness n=&quot;utile&quot; xml:id=&quot;O&quot;&gt;
+        [...]
+    &lt;/witness&gt;
+&lt;/listWit&gt;
+</code></pre>
+<p>Le contenu des différents témoins est ensuite géré à l’intérieur des balises <code>&lt;app&gt;</code>, puis <code>&lt;lem&gt;</code>et <code>&lt;rdg&gt;</code>.</p>
+<pre><code class="language-xml">&lt;!-- dans le fichier xml --&gt;
+
+&lt;app xml:id=&quot;c&quot;&gt;
+    &lt;lem wit=&quot;V&quot;&gt;
+        La variante que l’on veut garder dans l’affichage par défaut
+    &lt;/lem&gt;
+     &lt;rdg wit=&quot;O&quot;&gt;
+        Une autre variante
+    &lt;/rdg&gt;
+    &lt;rdg wit=&quot;P&quot;&gt;
+        Une autre variante
+    &lt;/rdg&gt;
+&lt;/app&gt;
+</code></pre>
+<p>Lors du rendu final, en sélectionnant un témoin particulier, pour chaque balise <code>app</code> rencontrée, ne seront affichées que les balises <code>lem</code> ou <code>rdg</code> qui auront pour attribut <code>@wit</code> le nom du témoin.</p>
+<h2 id="breadcrumb-fil-dariane">Breadcrumb (Fil d’Ariane)</h2>
+<p>Affichage du fil d’Ariane lors de la consultation du texte.</p>
+<p>Un fil d’ariane (ou breadcrumb en anglais) est une aide à la navigation, pour permettre au lecteur de se situer dans le site.</p>
+<p>Exemple d’un fil d’ariane :
+<img alt="Fil d’ariane" src="images/breadcrumb.png" /></p>
+<p>Le paramètre <code>$topLabel</code> permet de configurer le label de la racine du fil d’Ariane.</p>
+<pre><code class="language-xml"> &lt;plugin name=&quot;breadcrumb&quot;&gt;
+   &lt;parameters&gt;
+     &lt;parameter key=&quot;topLabel&quot; value=&quot;Sanctoral – Beata Maria&quot;/&gt;
+   &lt;/parameters&gt;
+ &lt;/plugin&gt;
+</code></pre>
+<h2 id="correction">Correction</h2>
+<p>Afficher/masquer les erreurs et leurs corrections (balises <code>tei:sic</code> et <code>tei:corr</code>), via les options de lecture.</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;correction&quot;/&gt;
+</code></pre>
+<p><img alt="Correction" src="images/correction1.png" /></p>
+<ul>
+<li>
+<p>Exemple de texte sans l’option Correction (le contenu de la balise <code>tei:sic</code> est en rouge, avec le terme [<em>sic</em>]) :
+<img alt="Correction" src="images/correction2.png" /></p>
+</li>
+<li>
+<p>Exemple de texte avec l’option Correction (le contenu de la balise <code>tei:corr</code> est en vert entre crochets) :
+<img alt="Correction" src="images/correction3.png" /></p>
+</li>
+</ul>
+<h2 id="diplomatique">Diplomatique</h2>
+<p>Plugin rassemblant les plugins <a href="#abreviation">abréviation</a> (balises <code>tei:ex</code> et <code>tei:am</code>), <a href="#correction">correction</a> (balises <code>tei:sic</code> et <code>tei:corr</code>),  et <a href="#normalisation">normalisation</a> (balises <code>tei:reg</code> et <code>tei:orig</code>).</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;diplomatique&quot;/&gt;
+</code></pre>
+<h2 id="ead-basket">EAD basket</h2>
+<p>Ce plugin permet d’utiliser le porte-document dans le cadre des éditions en EAD.</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;ead_basket&quot;/&gt;
+</code></pre>
+<p><img alt="Porte documents" src="images/porte_doc1.png" /></p>
+<p>Lorsque vous cochez la case (capture d’écran ci-dessus), le document est alors enregistré dans le porte-document. Pour voir le contenu du porte-document (capture d’écran ci-dessous), cliquer sur le lien "porte-documents".</p>
+<p><img alt="porte documents" src="images/porte_doc2.png" /></p>
+<h2 id="ead-to-pdf">EAD to PDF</h2>
+<p>Le fait d’activer ce plugin, déclenche l’affichage d’un bouton permettant de générer un pdf dans une édition en EAD.</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;ead_pdf&quot;/&gt;
+</code></pre>
+<p><img alt="EAD to PDF" src="images/ead2pdf.png" /></p>
+<p>L’url permettant d’activer cette fonctionnalité :</p>
+<p><code>http://[host]:[port]/[edition]/[document].xml/[id].pdf</code></p>
+<p>Par exemple :</p>
+<p><code>http://localhost:17002/mon-edition/monFichier.xml/div1.1.pdf</code></p>
+<!--
+### Équations
+
+Permet l’affichage HTML des équations mathématiques (encodage `tei:formula[@notation='TeX']`)
+
+
+<pre><code class="language-xml">&lt;plugin name=&quot;equations&quot;/&gt;
+</code></pre>
+
+-->
+
+<h2 id="ead-metadata">EAD metadata</h2>
+<p>Ce plugin permet d’afficher les métadonnées d’une édition en EAD contenues dans les balises <code>&lt;eadheader&gt;</code> et <code>&lt;archdesc&gt;</code>.</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;ead_metadata&quot;/&gt;
+</code></pre>
+<h2 id="index">Index</h2>
+<p>Permet de générer différents index pour les documents en EAD : personnes, lieux, documents, etc.</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;index&quot;/&gt;
+</code></pre>
+<p><img alt="Index" src="images/index_ead.png" /></p>
+<p>Les index étant trop spécifiques pour permettre la mise en place d’un traitement par défaut satisfaisant, ce plugin propose donc <strong>une <a href="../glossary/#r">route*</a> unique</strong> pour chaque index, solution pour systématiser la production des index ainsi que les routes correspondantes. </p>
+<p>Il permet de limiter les temps de calcul en stockant les fragments html de chaque page d’index.</p>
+<p>L’URL associée à un index est <code>http://[serveur:port]/[projet]/index/[typeindex].html</code></p>
+<ul>
+<li><code>typeindex</code> : valeur choisie par l’utilisateur (par exemple <code>index/lieux.html</code> ou <code>index/personnes.html</code>). </li>
+</ul>
+<p>Par exemple : <code>http://localhost:17002/mon-edition/index/lieux.html</code></p>
+<p>Cela nécessite de créer un dossier <span class="dossier">index</span> dans les dossiers suivants :</p>
+<ul>
+<li><span class="dossier">[projet-]editions/[projet]/xq</span></li>
+<li><span class="dossier">[projet-]editions/[projet]/ui/xsl</span></li>
+<li><span class="dossier">[projet-]editions/[projet]/fragments/[langueLocale]</span></li>
+</ul>
+<p>On place dans le dossier <span class="dossier">xq/index</span> un fichier nommé <span class="fichier">index_[typeindex].xq</span> qui permettra de générer l’index. Par exemple, pour un index de Lieux, un fichier <span class="fichier">index_lieux.xq</span> : </p>
+<pre><code>declare variable $dbPath external;
+declare variable $project external;
+declare variable $baseURI external;
+
+&lt;index type=&quot;lieux&quot;&gt;
+    {for $idx in collection($dbPath)//*:geogname[@normal] | collection($dbPath)//*:corpname[@normal]
+    let $cId := $idx/ancestor::*:c[@id][1]/@id
+    let $baseuridb := substring-after(base-uri($idx), $dbPath)
+    let $cOtherlevel := $idx/ancestor::*:c[1]/@otherlevel
+    let $role := $idx/@role
+    let $initiale := substring($idx/@normal,1,1) 
+    let $cUnitid := $idx/ancestor::*:c[1]/descendant::*:unitid[1]/text()
+    let $cParent := $idx/ancestor::*:c[@otherlevel]/descendant::*:unitid[1]/text()
+    let $result := 
+            &lt;marker id=&quot;{$cId}&quot; otherlevel=&quot;{$cOtherlevel}&quot; role=&quot;{$role}&quot;&gt;
+            &lt;entry&gt;{$cUnitid}&lt;/entry&gt;
+                &lt;manuscrit&gt;{$cParent}&lt;/manuscrit&gt;
+                &lt;value&gt;{data($idx/@normal)}&lt;/value&gt;
+                &lt;baseuri&gt;{$baseURI || $project || $baseuridb}&lt;/baseuri&gt;
+                &lt;initiale&gt;{translate($initiale,'É[','E')}&lt;/initiale&gt;
+            &lt;/marker&gt;
+        return $result
+    }
+&lt;/index&gt;
+</code></pre>
+<p>Si nécessaire, on surcharge avec une XSL dans le dossier <span class="dossier">ui/xsl/index</span> avec un fichier <span class="fichier">index_[typeindex].xsl</span>.</p>
+<p>Lors du premier accès à la page <code>[projet]/index/[typeindex].html</code>, un fichier HTML (<span class="fichier">index_[typeindex].frag.html</span>) est généré dans le dossier <span class="dossier">fragments/[langueLocale]/index</span>  : la requête XQUERY et le traitement XSL associé sont exécutés lors de ce premier appel. </p>
+<p>Pour générer à nouveau la page d’index, il faut supprimer le fichier <span class="fichier">index_[typeindex].frag.html</span> souhaité, et relancer la page <code>[projet]/index/[typeindex].html</code>.</p>
+<h2 id="normalisation">Normalisation</h2>
+<p>Afficher/masquer la normalisation de l’éditeur (balises <code>tei:reg</code> &amp; <code>tei:orig</code>), <em>via</em> les options de lecture.</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;normalisation&quot;/&gt;
+</code></pre>
+<p><img alt="Normalisation" src="images/norm1.png" /></p>
+<p>Exemple de texte sans l’option Normalisation :
+<img alt="Normalisation" src="images/norm2.png" /></p>
+<p>Exemple de texte avec l’option Normalisation :
+<img alt="Normalisation" src="images/norm3.png" /></p>
+<!--
+### Notes
+à venir-->
+
+<!-- -- ### Pagination (Pager) ??
+
+
+<pre><code class="language-xml">&lt;plugin name=&quot;pager&quot;&gt;
+      &lt;!-- paramètres nécessaires au bon fonctionnement du plugin --&gt;
+      &lt;parameters&gt;
+        &lt;!-- XPaths des éléments à paginer--&gt;
+        &lt;parameter key=&quot;itemsPath&quot; value=&quot;//*:list/*:item&quot;/&gt;
+        &lt;!--Nombre de blocks par page --&gt;
+        &lt;parameter key=&quot;nbBlocks&quot; value=&quot;100&quot;/&gt;
+        &lt;!--Nombre de liens de pages visibles --&gt;
+        &lt;parameter key=&quot;nbLinks&quot; value=&quot;10&quot;/&gt;
+      &lt;/parameters&gt;
+    &lt;/plugin&gt;
+</code></pre>
+
+Ce plugin est à activer pour les documents longs qui ne possèdent pas de divisions et sous-divisions pour la navigation. ---->
+<h2 id="recherche-ead-ead_search">Recherche EAD (ead_search)</h2>
+<p>Voici un exemple de configuration du plugin de recherche :</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;ead_search&quot;&gt;
+    &lt;parameters&gt;
+        &lt;parameter key=&quot;searchForm&quot;&gt;
+            &lt;search&gt;
+                &lt;tags&gt;
+                    &lt;tag name=&quot;persname&quot; attribute=&quot;role&quot; value=&quot;auteur&quot; label=&quot;Auteurs&quot;/&gt;
+                    &lt;tag name=&quot;title&quot; attribute=&quot;type&quot; value=&quot;Oeuvre&quot; label=&quot;Titre des œuvres&quot;/&gt;
+                    &lt;tag name=&quot;geogname&quot; attribute=&quot;role&quot; value=&quot;publication&quot; label=&quot;Lieux de publication&quot;/&gt;
+                    &lt;tag name=&quot;corpname&quot; attribute=&quot;role&quot; value=&quot;scriptorium&quot; label=&quot;Scriptoria&quot;/&gt;
+                &lt;/tags&gt;
+                &lt;dates format=&quot;YYYY&quot;/&gt;
+            &lt;/search&gt;
+        &lt;/parameter&gt;
+    &lt;/parameters&gt;
+&lt;/plugin&gt;
+
+</code></pre>
+<ul>
+<li><strong>tag</strong> : nom de l’élément XML dans lequel les recherches sont effectuées, avec <code>name</code> pour le nom de la balise, <code>atribute</code> pour l’attribut voulu dans la balise et <code>value</code> pour la valeur de l’attribut.</li>
+<li>Les balises <code>ead:name</code> visées par la recherche (ici <em>persname, title, geogname, corpname</em>) doivent absolument posséder un attribut <code>@normal</code> dans le document XML pour être prises en compte par la recherche.</li>
+</ul>
+<p>La recherche est accessible à cette URL :
+<code>http://[host]:[port]/[edition]/rechercher.html</code></p>
+<p><img alt="Recherche EAD" src="images/ead_search.png" /></p>
+<h2 id="recherche-tei-search">Recherche TEI (search)</h2>
+<p>Voici un exemple de configuration du plugin de recherche :</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;search&quot;&gt;
+    &lt;parameters&gt;
+        &lt;!--Les recherches sont effectuées dans toutes les balises p, app, lem et rdg
+        (et leurs descendants)--&gt;
+        &lt;parameter key=&quot;tag&quot; value=&quot;p app lem rdg&quot;/&gt;
+        &lt;!--Pour chacun des résultats, le lien de retour au texte pointe
+        vers la div ancêtre identifiée ayant un @ type--&gt;
+        &lt;parameter key=&quot;backToTextID&quot; value=&quot;(./ancestor::*:div[@*:type])[1]/@xml:id&quot;/&gt;
+    &lt;/parameters&gt;
+&lt;/plugin&gt;
+&lt;docsToIgnore&gt;
+    &lt;docToIgnore&gt;monfichier.xml&lt;/docToIgnore&gt;
+&lt;/docsToIgnore&gt;
+
+</code></pre>
+<ul>
+<li><strong>value</strong> : nom des balises TEI dans lequel les recherches sont effectuées,</li>
+<li><strong>backToTextId</strong> : xpath à suivre pour les liens de retour au texte sur les éléments de résultat,</li>
+<li><strong>docsToIgnore</strong> : permet d’indiquer les fichiers que l’on ne souhaite pas prendre en compte pour la recherche.</li>
+</ul>
+<p>La recherche est accessible à cette URL :
+<code>http://[host]:[port]/[edition]/search.html</code></p>
+<p><img alt="Recherche TEI" src="images/tei_search.png" /></p>
+<h2 id="side-toc-ead">Side toc (EAD)</h2>
+<pre><code class="language-xml">&lt;plugin name=&quot;side_toc&quot;/&gt;
+</code></pre>
+<p>Ce plugin doit être déclaré pour les éditions en EAD.
+Il permet de générer un sommaire interactif et arborescent sur la partie gauche du site.<br/></p>
+<p><img alt="Side toc" src="images/side_toc.png" /></p>
+<p>Pour modifier l’affichage par défaut de la side toc, on peut surcharger son comportement en créant un fichier nommé <span class="fichier">document_toc.xq</span>, que l’on place dans le dossier <span class="dossier">[projet-]editions/[edition]/xq</span>.</p>
+<h2 id="sources-export">Sources export</h2>
+<p>Ce plugin permet de récupérer l’ensemble des fichiers XML de l’édition (<a href="../basex">ajoutés via BaseX</a>) dans un dossier zippé.</p>
+<pre><code class="language-xml">&lt;plugin name=&quot;sources_export&quot;/&gt;
+</code></pre>
+<p>Pour récupérer le dossier zippé, il faut saisir l’url suivante : <br/>
+<code>http://[host]:[port]/[edition]/[edition].zip</code></p>
+<p>Par exemple : <br/>
+    <code>http://localhost:17002/mon-edition/mon-edition.zip</code></p>
+<p>Si un fichier XML est indenté lorsqu’il est ajouté dans BaseX, le plugin le récupérera indenté dans le fichier .zip. On peut rajouter des paramètres dans l’URL pour récupérer :</p>
+<ul>
+<li>Soit l’ensemble des fichiers XML indentés :</li>
+</ul>
+<p><code>http://[host]:[port]/[edition]/[edition].zip?indent=true</code></p>
+<ul>
+<li>Soit l’ensemble des fichiers XML non indentés :</li>
+</ul>
+<p><code>http://[host]:[port]/[edition]/[edition].zip?indent=no</code></p>
+<h2 id="tei-to-pdf">TEI to PDF</h2>
+<pre><code class="language-xml">&lt;plugin name=&quot;tei_pdf&quot;/&gt;
+</code></pre>
+<p>Le fait d’activer ce plugin, déclenche l’affichage d’un bouton permettant de générer un PDF.</p>
+<p>L’url permettant d’activer cette fonctionnalité :</p>
+<p><code>http://[host]:[port]/[edition]/[document].xml/[id].pdf</code></p>
+<p>Par exemple :</p>
+<pre><code>http://localhost:17002/mon-edition/monFichier.xml/div1.1.pdf
+</code></pre>
+<hr />
+<pre style="font-size:80%;">
+    Nota Bene
+    La génération d’un PDF pour une édition alignée en TEI ne fonctionne pas pour l’instant.
+</pre>
+<hr />
+<h2 id="visionneuse-dimages-img_viewer">Visionneuse d’images (img_viewer)</h2>
+<p>Permet la consultation des images au sein d’une visionneuse (<a href="https://openseadragon.github.io/">Openseadragon</a>).</p>
+<p>Ce plugin requiert le chemin de stockage des images relatif à l’édition (<code>imagesRepository</code>) comme paramètre de configuration :</p>
+<pre><code>     &lt;plugin name=&quot;img_viewer&quot;&gt;
+       &lt;parameters&gt;
+         &lt;parameter key=&quot;imagesRepository&quot; value=&quot;ui/images/&quot; xsl=&quot;true&quot;/&gt;
+       &lt;/parameters&gt;
+     &lt;/plugin&gt;
+</code></pre>
+<p>Le chemin (ici <span class="dossier">ui/images</span>) est indiqué dans l’attribut <code>@value</code> de la balise <code>&lt;parameter&gt;</code>.</p>
+<p>Pour consulter des images tuilées (dzi, iiif, etc.), il faut surcharger le template relatif à la balise <code>tei:graphic</code> dans le fichier <span class="fichier">text_hook.xsl</span> (situé dans le dossier <span class="dossier">[projet-]editions/[edition]/ui/xsl/[ead ou tei]</span>).
+On remplace alors le paramètre d’appel à <code>MAX.plugins['img_viewer'].openImageInDialog</code> par l’URL du <code>.dzi</code> ou <code>.json</code>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="metadata.html" class="btn btn-neutral float-right" title="Métadonnées HTML">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="overriding.html" class="btn btn-neutral" title="Surcharges"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="overriding.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="metadata.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="javascripts/mermaid.min.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

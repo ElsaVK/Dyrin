@@ -1,0 +1,6 @@
+<configuration xmlns:xi="http://www.w3.org/2001/XInclude">
+  <baseURI/>
+  <editions>
+    <xi:include href="../editions/dyrin/dyrin_config_inc.xml"/>
+  </editions>
+</configuration>

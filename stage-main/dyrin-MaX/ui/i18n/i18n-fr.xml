@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<properties>
+  <entry key="menu.home">Accueil</entry>
+  <entry key="menu.sommaire">Sommaire</entry>
+  <entry key="menu.contacts">Contacts</entry>
+  <entry key="menu.recherche">Rechercher</entry>
+  <entry key="menu.about">À propos</entry>
+  <entry key="menu.porte-document">Porte-documents</entry>
+
+  <entry key="search.label">Recherche</entry>
+  <entry key="search.loading">Recherche en cours ...</entry>
+  <entry key="search.results">résultat(s)</entry>
+
+	<!-- Label -->
+	<entry key="label.dansvotre">Dans votre </entry>
+	<entry key="label.porte-documents">porte-documents</entry>
+  
+  <entry key="pb">Afficher les sauts de page</entry>
+  <entry key="reading-options">Options de lecture</entry>
+</properties>

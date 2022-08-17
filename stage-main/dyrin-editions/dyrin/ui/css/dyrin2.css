@@ -1,0 +1,481 @@
+@font-face {
+    font-family: "junicode-server";
+    src: url('../fonts/junicode/Junicode.ttf');
+}
+@font-face {
+    font-family: "junicode-serverItalic";
+    src: url('../fonts/junicode/Junicode-Italic.ttf');
+}
+@font-face {
+    font-family: "junicode-serverBold";
+    src: url('../fonts/junicode/Junicode-Bold.ttf');
+}
+@font-face {
+    font-family: "junicode-serverBoldItalic";
+    src: url('../fonts/junicode/Junicode-BoldItalic.ttf');
+}
+
+body {
+		background-color: #ﬀf;
+    font-family: Serif;
+    font-size: 13pt;
+		letter-spacing: 150%;
+	}
+
+/* gestion du teiHeader */
+.editeur {
+  font-style: italic;
+}
+
+/* fin gestion du teiHeader */
+
+div[class='oeuvre_editions'] li {
+  padding-top: 10px;
+}
+
+/*div[class="metadata"] h1 {
+  background-color: cadetblue;
+  padding-left: 10px;
+  padding-top: 5px;
+  color: white;
+  border-style: double;
+}*/
+
+h2 {
+  padding: 15px;
+	margin-top: 40px;
+	border-top: solid 3px;
+	border-bottom: solid 2px;
+  border-color: darkred;
+  color: darkred;
+}
+
+h4 {
+  margin: 5px;
+	padding: 5px;
+}
+
+h6 {
+  font-style: oblique;
+  margin: 5px;
+	padding: 5px;
+}
+
+
+
+.note {
+  display: block;
+  margin: 5px;
+  padding-left: 5px;
+  border-radius: 5px 5px 5px 5px;
+  font-size: smaller;
+  text-align: -moz-left;
+  border-style: dotted;
+  border-width: thin;
+}
+
+/* aspect des index déroulants */
+/*div.index legend.collapsible {
+	color: darkcyan;
+	cursor: pointer;
+	padding-left: 0.6rem;
+	max-width: 40em;
+	text-align: left;
+	border-radius: 4px;
+	margin-bottom: 20px;
+	background-color: transparent;
+	font-weight: normal;
+	font-family: "gabriola-server";
+	font-size: medium;
+}
+div.index legend.collapsible::after {
+    content: "▶";
+    font-size: 11px;
+    padding-left: 9px;
+}
+
+div.index legend.collapsible.active::after {
+    content: "▼";
+    font-size: 11px;
+    padding-left: 9px;
+}*/
+/* fin aspect des index déroulants */
+
+.home_text_dev {
+	/*padding: 0 18px;*/
+	display: none;
+	overflow: hidden;
+	margin-top: 0.8rem;
+	margin-left: 2rem;
+	margin-bottom: 1rem;
+}
+
+.subtype {
+	border : solid 2px;
+	border-color: black;
+	margin: 5px;
+	padding: 5px;
+}
+
+/* design des sections */
+.section1 {
+	border-bottom: solid 1px;
+	border-color: darkblue;
+	margin: 15px;
+	padding: 10px;
+}
+
+.section2 {
+  border-style: solid;
+  padding: inherit;
+  margin: inherit;
+  border-width: thin;
+}
+
+.section3 {
+	margin: 5px;
+	padding: 20px;
+  border-bottom: dashed thin cornsilk;
+}
+/* fin design des sections */
+
+.sub_list {
+  display: none;
+  overflow: hidden;
+}
+
+.oeuvre {
+  margin-bottom: 20px;
+  border-style: solid;
+  border-width: 1px;
+  padding: 10px;
+}
+
+div.oeuvre_editions,
+div.oeuvre_manuscrits,
+div.oeuvre_edition_ancienne,
+div.oeuvre_edition_seule,
+div.oeuvre_edition_critique,
+div.oeuvre_trad_seule,
+div.oeuvre_fac-simile {
+  border: solid 1px;
+  border-radius: 3px;
+  margin: 20px 50px 10px 10%;
+}
+
+/* design des index */
+
+[class^="index"] {
+  margin: 10px;
+}
+
+span.index_lieux span {
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkgreen;
+}
+
+a.lieu {
+  color: darkgreen;
+}
+
+span.index_themes span{
+  border-style: solid;
+  border-width: 1px;
+  border-color: darkorange;
+}
+
+a.theme {
+  color: darkorange;
+}
+
+span.index_zoonymes span{
+  border-style: solid;
+  border-width: 1px;
+  border-color: midnightblue;
+}
+
+a.zoonyme {
+  color: darkblue;
+}
+
+span.index_personnes span{
+  border-style: solid;
+  border-width: 1px;
+  border-color: #0066b2;
+}
+
+span.index_animaux span{
+  border-style: solid;
+  border-width: 1px;
+  border-color: gray;
+}
+
+a.animal {
+  color: gray;
+}
+
+span.index_analytique span{
+  border-style: solid;
+  border-width: 1px;
+  border-color: red;
+}
+
+a.analytique {
+  color: darkred;
+}
+
+.index_term {
+  padding: 5px;
+  margin: 5px;
+}
+
+fieldset id {
+  color: red;
+}
+
+div.index h1 {
+  color: #A60000;
+  font-size: revert;
+}
+/* fin design des index */
+
+
+/* design du menu */
+
+body.max-menu-left nav ul {
+  list-style-type: none;
+}
+
+body.max-menu-left nav a {
+  background-color: transparent;
+  color: #A60000;
+
+}
+
+li.nav-item {
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li.nav-item a{
+  text-decoration: none;
+  list-style-type: none;
+}
+
+li.nav-item a:hover{
+  text-decoration: underline;
+}
+
+/* fin design du menu */
+
+/* design du sommaire */
+#toc li a {
+  text-decoration: none;
+  vertical-align: unset;
+  font-size: larger;
+  color: darkred;
+}
+
+#toc li {
+  list-style-type: '- ';
+  margin: 10px;
+}
+
+#toc li desc {
+  font-style: italic;
+  font-size: smaller;
+}
+
+/* fin du design du sommaire */
+
+/*div.ref_biblio ul{
+margin-left: 5%;
+margin-top: inherit;
+margin-bottom: inherit;
+}*/
+
+div.ref_biblio li {
+  margin: inherit;
+}
+
+div.biblio_animal li {
+  margin: inherit;
+}
+
+div.etudes ul{
+margin-left: 5%;
+margin-top: inherit;
+margin-bottom: inherit;
+}
+
+div.editions a.bibref {
+  color: darkred;
+  text-decoration: none;
+}
+
+        /* design des titres */
+
+        .titre_fiche {
+          color: white;
+          border-style: solid;
+          padding-left: 8px;
+          border-width: 1px;
+          background-color: darkred;
+          border-color: black;
+          padding-top: 3px;
+        }
+
+        .title {
+          font-style: italic;
+        }
+        .titre_oeuvre {
+          font-weight: bold;
+          font-style: italic;
+
+        }
+        .titre_figure {
+          font-style: italic;
+        }
+        .titre_bibliographie {
+          margin: 20px;        }
+
+        /* design des titres */
+
+div.bibliographie {
+	background-color: powderblue;
+}
+
+/* début design images */
+
+.img_pres {
+  float: right;
+  margin-top: 10px;
+  border-style: double;
+}
+
+.icono {
+  border: solid 1px;
+  margin: 2px;
+}
+
+.rubrique {
+  font-style: italic;
+}
+
+.fig_ico {
+border: double;
+margin: 1Opx;
+margin: inherit;
+padding: inherit;
+}
+
+div.figure_pres img {
+  display: block;
+  float: right;
+  margin: 10px 100px 0px 0px;
+  border-style: double;
+}
+
+div.graphic a {
+  color:black;
+  text-decoration: none;
+}
+
+.figure_img {
+border-style: dashed;
+border-width: 1px;
+padding: inherit;
+margin: inherit;
+}
+
+/* fin design images */
+
+.auteur_oeuvre {
+  font-weight: bold;
+}
+
+span.mirador-link {
+  padding: 2px 2px 0px 2px;
+  color: darkred;
+  margin: 2px;
+  border-style: solid;
+  border-width: 1px;
+}
+
+span.mirador-link:hover,
+#toc li a:hover,
+span[class^="index"] a:hover {
+  font-weight: bolder;
+}
+
+div[class="texte_pres"] img {
+  display: block;
+  margin-left: auto;
+  width: 50%
+}
+
+/* design auteur oeuvre */
+div.bandeau_oeuvre a.personne,
+div.section2 a.personne {
+  text-decoration: none;
+  color: #0066b2;
+  font-size: larger;
+}
+
+div.bandeau_oeuvre a.personne:hover {
+  color:snow;
+}
+
+div.images a.personne:hover {
+  color: darkblue;
+}
+
+a.personne:hover {
+  color: #13274F;
+  cursor: pointer;
+}
+/* fin design auteur oeuvre */
+
+a {
+  color: #0066b2;
+  text-decoration: none;
+
+}
+
+abbr[title],
+abbr[data-bs-original-title]  {
+  text-decoration: none;
+  cursor: pointer;;
+}
+
+/* design des licences */
+
+.licence {
+  font-size: smaller;
+}
+
+/* fin design des licences */
+
+a.source_url {
+  color: darkblue;
+  border-style: solid;
+  border-width: thin;
+  padding: 2px;
+  margin: 2px;
+}
+
+a.source_url:hover{
+  color: darkred;
+}
+
+*[class="hide"] {
+        display: none !important;
+    }
+
+.bandeau_oeuvre {
+  border-style: solid;
+  border-width: 1px;
+  border-color: black;
+  background-color: lightsteelblue;
+  padding: 5px;}

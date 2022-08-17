@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Configuration - MaX - Documentation</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="css/mermaid.css" rel="stylesheet" />
+  <link href="css/test.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Configuration";
+    var mkdocs_page_input_path = "config.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> MaX - Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Documentation d’utilisation de MaX</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="script.html">Création d'une édition</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="files.html">Organisation des dossiers et des fichiers</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="config.html">Configuration</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#configuration-generale-de-max">Configuration générale de MaX</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#configuration-dune-edition">Configuration d’une édition</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="features.html">Fonctionnement</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="basex.html">Fichiers XML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="static_pages.html">Pages HTML statiques</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="home_page.html">Page d’accueil</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="toc.html">Sommaires</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="text.html">Textes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="layout.html">Gabarits, mise en page</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="i18n.html">Fichier i18n</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="overriding.html">Surcharges</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="metadata.html">Métadonnées HTML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="production.html">Mise en production</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">MaX - Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Configuration</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="configuration">Configuration</h1>
+<h2 id="configuration-generale-de-max">Configuration générale de MaX</h2>
+<p>Le fichier <span class="fichier">configuration.xml</span> (dans le dossier <span class="dossier">configuration</span>) inclut les fichiers de configuration des différentes éditions gérées par MaX.</p>
+<pre><code class="language-xml">
+&lt;!-- Exemple de fichier de configuration de MaX incluant 2 éditions : 
+    max-tei-demo et mon-edition --&gt;
+
+&lt;?xml version=&quot;1.0&quot;?&gt;
+&lt;configuration xmlns:xi=&quot;http://www.w3.org/2001/XInclude&quot;&gt;
+  &lt;baseURI/&gt;
+  &lt;editions&gt;
+    &lt;xi:include href=&quot;../editions/max_tei_demo/max_tei_demo_config_inc.xml&quot;/&gt;
+    &lt;xi:include href=&quot;../editions/mon-edition/mon-edition_config_inc.xml&quot;/&gt;
+    [...]
+  &lt;/editions&gt;
+&lt;/configuration&gt;
+</code></pre>
+<p>Chaque nouvelle édition implémentée avec l’outil <em>max.sh</em> ajoute un élément <code>&lt;xi:include&gt;</code>.</p>
+<p>Quand une édition déjà préparée est récupérée, cette ligne peut être ajoutée manuellement.</p>
+<h2 id="configuration-dune-edition">Configuration d’une édition</h2>
+<p>L’édition <span class="dossier">mon-edition</span> sera configurée grâce au fichier <span class="dossier">editions</span>/<span class="dossier">mon-edition</span>/<span class="fichier">mon-edition_config_inc.xml</span>.</p>
+<pre><code>&lt;!-- Exemple de fichier de configuration par défaut, sans option, ni surcharge, ni plugin--&gt;
+
+&lt;edition xml:id=&quot;mon-edition&quot; dbpath=&quot;moneditiondb&quot; env=&quot;tei&quot; prettyName=&quot;Mon Édition&quot;&gt;
+&lt;/edition&gt;
+</code></pre>
+<ul>
+<li><code>@xml:id</code> : identifiant de l’édition. Toutes les URLs de consultation commencent par cet identifiant,</li>
+<li><code>@dbpath</code> : nom de la base de données contenant les sources XML consultables </li>
+<li><code>@env</code> : grammaire XML de l’édition (tei ou ead).</li>
+</ul>
+<p>Ces trois paramètres sont définis lors de l’étape 3 de la <a href="../script/#deploiement-dune-nouvelle-edition">procédure de déploiement d’une nouvelle édition</a>.</p>
+<ul>
+<li><code>@prettyName</code> : titre de l’édition qui pourra être récupéré sous forme de variable et affiché à divers endroits du site.</li>
+</ul>
+<p>Ce fichier contiendra si nécessaire, la configuration des <a href="../text/#options-de-lecture">options de lecture</a>, l’activation et le paramètrage de <a href="../text/#alignement">l’alignement</a> et des <a href="../plugins">plugins</a>.</p>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="features.html" class="btn btn-neutral float-right" title="Fonctionnement">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="files.html" class="btn btn-neutral" title="Organisation des dossiers et des fichiers"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="files.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="features.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="javascripts/mermaid.min.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

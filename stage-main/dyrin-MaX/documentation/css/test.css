@@ -1,0 +1,95 @@
+        div.wy-side-nav-search {
+            z-index: 200;
+            background-color: #93A9BE;
+            text-align: center;
+            padding: 0.809em;
+            display: block;
+            color: #fcfcfc;
+            margin-bottom: 0.809em;
+        }
+        
+        body {
+            font-family: "Lato", "proxima-nova", "Helvetica Neue", Arial, sans-serif;
+            font-weight: normal;
+            background-color: #274868;
+        }
+        
+        body.wy-body-for-nav {
+            background-color: #274868;
+        }
+        
+        nav.wy-nav-side {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 300px;
+            overflow: hidden;
+            overflow-y: hidden;
+            min-height: 100%;
+            background: #274868;
+            z-index: 200;
+        }
+        
+        .rst-versions {
+            background: #274868;
+        }
+        
+        .rst-versions .rst-current-version {
+            padding: 12px;
+            background-color: #274868;
+            display: block;
+            text-align: right;
+            font-size: 90%;
+            cursor: pointer;
+            color: #27AE60;
+            *zoom: 1;
+        }
+        
+        .wy-menu-vertical li.current {
+            background-color: #97AABD;
+        }
+        
+        li.current>a.current {
+            background: #6F8199;
+        }
+        
+        .wy-menu-vertical a {
+            display: inline-block;
+            line-height: 18px;
+            padding: 0.4045em 1.618em;
+            display: block;
+            position: relative;
+            font-size: 90%;
+            color: #fff;
+        }
+        
+        code,
+        .rst-content tt {
+            white-space: nowrap;
+            max-width: 100%;
+            background: #fff;
+            border: solid 1px #e1e4e5;
+            font-size: 75%;
+            padding: 0 5px;
+            font-family: Consolas, "Andale Mono WT", "Andale Mono", "Lucida Console", "Lucida Sans Typewriter", "DejaVu Sans Mono", "Bitstream Vera Sans Mono", "Liberation Mono", "Nimbus Mono L", Monaco, "Courier New", Courier, monospace;
+            color: #0096FF;
+            overflow-x: auto;
+        }
+        
+        .fichier {
+            color: #5F9EA0;
+        }
+        
+        .dossier {
+            color: #5F9EA0;
+            font-weight: bold;
+        }
+        
+        .projet {
+            font-style: italic;
+        }
+        
+        span.voc {
+            color: #274868;
+            font-weight: bold;
+        }

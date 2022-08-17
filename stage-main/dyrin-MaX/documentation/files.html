@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html class="no-js lt-ie9" lang="en" > <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en" > <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  
+  
+  <link rel="shortcut icon" href="img/favicon.ico">
+  <title>Organisation des dossiers et des fichiers - MaX - Documentation</title>
+  <link rel="stylesheet" href="css/theme.css" />
+  <link rel="stylesheet" href="css/theme_extra.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/github.min.css" />
+  <link href="css/mermaid.css" rel="stylesheet" />
+  <link href="css/test.css" rel="stylesheet" />
+  
+  <script>
+    // Current page data
+    var mkdocs_page_name = "Organisation des dossiers et des fichiers";
+    var mkdocs_page_input_path = "files.md";
+    var mkdocs_page_url = null;
+  </script>
+  
+  <script src="js/jquery-2.1.1.min.js" defer></script>
+  <script src="js/modernizr-2.8.3.min.js" defer></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/highlight.min.js"></script>
+  <script>hljs.initHighlightingOnLoad();</script> 
+  
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+
+    
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+        <a href="." class="icon icon-home"> MaX - Documentation</a>
+        <div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="./search.html" method="get">
+    <input type="text" name="q" placeholder="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="main navigation">
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="index.html">Documentation d’utilisation de MaX</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="install.html">Installation</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="script.html">Création d'une édition</a>
+                    </li>
+                </ul>
+                <ul class="current">
+                    <li class="toctree-l1 current"><a class="reference internal current" href="files.html">Organisation des dossiers et des fichiers</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#le-dossier-projet-max">Le dossier projet-MaX</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#le-dossier-projet-editions">Le dossier [projet-]editions</a>
+    </li>
+    </ul>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="config.html">Configuration</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="features.html">Fonctionnement</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="basex.html">Fichiers XML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="static_pages.html">Pages HTML statiques</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="home_page.html">Page d’accueil</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="menu.html">Menu</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="toc.html">Sommaires</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="text.html">Textes</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="layout.html">Gabarits, mise en page</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="i18n.html">Fichier i18n</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="overriding.html">Surcharges</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="plugins.html">Plugins</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="metadata.html">Métadonnées HTML</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="production.html">Mise en production</a>
+                    </li>
+                </ul>
+                <ul>
+                    <li class="toctree-l1"><a class="reference internal" href="glossary.html">Glossaire</a>
+                    </li>
+                </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+
+      
+      <nav class="wy-nav-top" role="navigation" aria-label="top navigation">
+        <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+        <a href=".">MaX - Documentation</a>
+      </nav>
+
+      
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".">Docs</a> &raquo;</li>
+    
+      
+    
+    <li>Organisation des dossiers et des fichiers</li>
+    <li class="wy-breadcrumbs-aside">
+      
+    </li>
+  </ul>
+  
+  <hr/>
+</div>
+          <div role="main">
+            <div class="section">
+              
+                <h1 id="organisation-des-dossiers-et-des-fichiers">Organisation des dossiers et des fichiers</h1>
+<h2 id="le-dossier-projet-max">Le dossier projet-MaX</h2>
+<p>L’application MaX s’organise selon l’arborescence suivante :</p>
+<div class="mermaid">
+graph LR;
+classDef default color:#274868, fill:#fff, stroke:#274868;
+    max-->A
+    max-->B
+    max-->C
+    max-->E
+    max-->F
+    max-->G
+    max-->H
+    max-->I
+    max-->J
+    A-->A1
+    C-.->C1
+    H-->H1
+    H-->H3
+    H-->H4
+    H-->H5
+    H-->H6
+    H-->H7
+    H-->H8
+    max["projet-MaX"]
+    A["configuration"]
+    A1("fichiers de configuration<br/>configuration.xml")
+    B["documentation"]
+    C["editions"]
+    C1["un dossier par édition<br/>lien(s) symbolique(s) vers le dossier projet-editions"]
+    E["plugins"]
+    F["rxq"]
+    G["tools"]
+    H["ui"]
+    H1["css"]
+    H3["i18n"]
+    H4["images"]
+    H5["js"]
+    H6["lib"]
+    H7["templates"]
+    H8["xsl"]
+    J("max.xq")
+</div>
+
+<ul>
+<li><strong>configuration</strong> : contient le/les fichiers de configuration,</li>
+<li><strong>documentation</strong> : contient la documentation de MaX,</li>
+<li><strong>editions</strong> : contient les <em>éditions</em> hébergées par l’instance de MaX. Chaque édition a son propre dossier dans lequel sont stockées ses ressources propres : HTML, XSLT, CSS, Javascript, XQuery, etc. Voir <a href="../script/#creation">Création d’une edition</a>,</li>
+<li><strong>plugins</strong> : contient les <em>plugins</em>. Chaque <em>plugin</em> dispose de son propre dossier de ressources : fichiers Javascript, XQuery, XSL, ... Voir la partie <a href="../plugins">Plugins</a>,</li>
+<li><strong>rxq</strong> : contient l’ensemble des modules RestXQ,</li>
+<li><strong>tools</strong> : contient les outils de déploiement : édition de démonstration, nouvelle édition, activation et désactivation de plugins,</li>
+<li>
+<p><strong>ui</strong> : </p>
+<ul>
+<li><strong>css</strong> : feuilles de style natives de MaX,</li>
+<li><strong>i18n</strong> : ressources d’internationalisation,</li>
+<li><strong>images</strong> : images de MaX : logo et icônes de navigation,</li>
+<li><strong>js</strong> : sources Javascript de MaX,</li>
+<li><strong>lib</strong> : librairies externes,</li>
+<li><strong>templates</strong> : <a href="../glossary/#t">templates HTML*</a>,</li>
+<li>
+<p><strong>xsl</strong> : feuilles de transformations XSL natives de MaX.</p>
+<p>=&gt; On retrouve la même organisation (dossier <strong>ui</strong>) de ces sous-dossiers pour la configuration d’une édition particulière (cf. ci-dessous <a href="#le-dossier-projet-editions">Le dossier [projet]-editions</a>)</p>
+</li>
+</ul>
+</li>
+<li>
+<p><strong>max.xq</strong> : <a href="../glossary/#c">« contrôleur » RestXQ*</a> de MaX.</p>
+</li>
+</ul>
+<p>Le moteur d’affichage XML est construit pour permettre l’exposition de n’importe quel vocabulaire XML.
+Néanmoins, deux vocabulaires ont fait l’objet de développements particuliers : EAD et TEI. Dans les dossiers <span class="dossier">rxq</span>, <span class="dossier">ui/css</span>, <span class="dossier">ui/js</span>, <span class="dossier">ui/templates</span>, <span class="dossier">ui/xsl</span>, l’utilisateur peut trouver des dossiers ou fichiers spécifiques pour ces deux vocabulaires.</p>
+<p>Le dossier <span class="dossier">[projet-]MaX</span> constitue le cœur applicatif (<em>core</em>) de MaX. La configuration spécifique de chaque édition se fera donc à l’extérieur du <em>core</em> dans le dossier <span class="dossier">[projet-]editions</span>.</p>
+<p>Il est ainsi fortement conseillé de ne modifier que ces deux dossiers :</p>
+<ul>
+<li><a href="../script"><span class="dossier">editions</span></a>,</li>
+<li><a href="../plugins"><span class="dossier">plugins</span></a>.</li>
+</ul>
+<h2 id="le-dossier-projet-editions">Le dossier [projet-]editions</h2>
+<div class="mermaid">
+graph LR;
+classDef default color:#274868, fill:#fff, stroke:#274868;
+    edition["[projet-]editions"]
+    A["mon-edition"]
+    edition-->A
+    A-->B
+    A-->C
+    A-->D
+    A-->E
+    A-->F
+    D-->D1
+    D-->D2
+    D-->D3
+    D1-->D4
+    D2-->D5
+    E-->E1
+    E-->E2
+    E-->E3
+    E-->E4
+    E-->E5
+    E-->E6
+    E-->E7
+    E1-->E8
+    E7-->E9
+    E7-->E10
+    E7-->E11
+    B("mon-edition_config_inc.xml")
+    C("menu.xml")
+    D["fragments"]
+    D1["fr"]
+    D2["en"]
+    D3("footer.frag.html")
+    D4("fichiers .frag.html")
+    D5("fichiers .frag.html")
+    E["ui"]
+    E1["css"]
+    E2["fonts"]
+    E3["i18n"]
+    E4["images"]
+    E5["js"]
+    E6["templates"]
+    E7["xsl"]
+    E8("mon-edition.css")
+    E9["core"]
+    E10["ead"]
+    E11["tei"]
+    F["xq"] 
+</div>
+
+<ul>
+<li><strong>mon-edition_config_inc.xml</strong> : le fichier de configuration de l’édition qui permet de : <ul>
+<li>préciser le nom de la base de données, le vocabulaire utilisé, le prettyName (titre de l’édition récupéré sous forme de variable et affiché à divers endroits du site), </li>
+<li>activer les plugins, etc.,</li>
+</ul>
+</li>
+<li><strong>fragments</strong> : contient les pages statiques,</li>
+<li><strong>menu.xml</strong> : le fichier pour configurer le menu,</li>
+<li><strong>ui</strong> : contient les dossiers pour les css, les xsl, le template html, les images, les polices, etc.,</li>
+<li><strong>xq</strong> : contient les fichiers de requêtes spécifiques à l’édition.</li>
+</ul>
+              
+            </div>
+          </div>
+          <footer>
+  
+    <div class="rst-footer-buttons" role="navigation" aria-label="footer navigation">
+      
+        <a href="config.html" class="btn btn-neutral float-right" title="Configuration">Next <span class="icon icon-circle-arrow-right"></span></a>
+      
+      
+        <a href="script.html" class="btn btn-neutral" title="Création d'une édition"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+      
+    </div>
+  
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+    
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/snide/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+      
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="versions">
+    <span class="rst-current-version" data-toggle="rst-current-version">
+      
+      
+        <span><a href="script.html" style="color: #fcfcfc;">&laquo; Previous</a></span>
+      
+      
+        <span style="margin-left: 15px"><a href="config.html" style="color: #fcfcfc">Next &raquo;</a></span>
+      
+    </span>
+</div>
+    <script>var base_url = '.';</script>
+    <script src="js/theme.js" defer></script>
+      <script src="javascripts/mermaid.min.js" defer></script>
+      <script src="search/main.js" defer></script>
+    <script defer>
+        window.onload = function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        };
+    </script>
+
+</body>
+</html>

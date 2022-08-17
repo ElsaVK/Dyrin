@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<menu>
+	<entry type="main" default="true">
+		<id>accueil</id>
+		<target>accueil.html</target>
+	</entry>
+	<entry type="main" default="true">
+		<id>sommaire</id>
+		<target>sommaire.html</target>
+	</entry>
+	<entry type="main" default="true">
+		<id>index</id>
+		<target>index.html</target>
+		<!-- sous-menu Index -->
+				<entry>
+					<id>index_lieux</id>
+					<target>index/lieux.html</target>
+				</entry>
+				<entry>
+					<id>index_personnes</id>
+					<target>index/personnes.html</target>
+				</entry>
+					<entry>
+						<id>index_auteurs</id>
+						<target>index/auteurs.html</target>
+					</entry>
+					<entry>
+						<id>index_artistes</id>
+						<target>index/artistes.html</target>
+					</entry>
+					<entry>
+					<id>index_themes</id>
+					<target>index/themes.html</target>
+				</entry>
+				<entry>
+					<id>index_zoonymes</id>
+					<target>index/zoonymes.html</target>
+				</entry>
+				<!-- fin sous-menu -->
+	</entry>
+	<entry type="main" default="true">
+		<id>about</id>
+		<target>about.html</target>
+	</entry>
+	<entry type="main" default="true">
+		<id>contacts</id>
+		<target>contacts.html</target>
+	</entry>
+</menu>

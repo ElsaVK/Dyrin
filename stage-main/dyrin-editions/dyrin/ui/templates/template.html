@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="{$baseURI}core/ui/lib/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="{$baseURI}{$projectId}/ui/css/menuGauche.css" />
+    <link rel="stylesheet" type="text/css" href="{$baseURI}core/ui/css/tei.css" />
+    <link rel="stylesheet" type="text/css" href="{$baseURI}core/ui/css/alignment.css" />
+    {$head}
+  </head>
+
+  <body class="max-menu-left">
+    <nav id="leftbar">
+      {$prettyName}
+      {$menu}
+    </nav>
+
+    <div id="bandeauHaut">
+      <div id="text-options">{$textOptions}</div>
+      <div id="navigation-wrap">{$navigationSelect}</div>
+  </div>
+
+    <div id="main-max-container">
+
+    {$content}
+    <!-- gestion des ref aux thesauris du PDN -->
+    <div id="thesauriPDN" class="fenetreModale" style="display: none;">
+                <!-- Modal content -->
+                <div class="fenetreModale-content">
+                    <div class="fenetreModale-header" style="text-align:right">
+                        <span class="close">X</span>
+                    </div>
+                <div class="fenetreModale-bodySection"></div>
+                </div>
+            </div>
+
+    {$footer}
+  </div>
+
+    <!-- js imports -->
+    <script type="text/javascript" src="{$baseURI}core/ui/lib/bootstrap.bundle.min.js" />
+    <script type="module" src="{$baseURI}core/ui/js/MaxTEI.js" />
+    {$jsImports}
+  </body>
+</html>

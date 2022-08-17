@@ -1,0 +1,9 @@
+<edition xml:id="dyrin" dbpath="dyrin" env="tei" prettyName="Dyrin">
+  <!-- IMPORTANT : xml:id = identifiant-->
+  <textOptions/>
+  <plugins>
+    <plugin name="thesauri_pdn"/>
+    <plugin name="mirador_viewer"/>
+    <plugin name="index"/>
+  </plugins>
+</edition>

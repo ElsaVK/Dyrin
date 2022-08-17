@@ -1,0 +1,136 @@
+
+/*#bandeauHaut {
+	height: 75px;
+	margin-top: -4em;
+	background-color: #ffffff;
+	position: fixed;
+	width: 60%;
+	margin-left: 20%;
+}*/
+
+#navigation-tool {
+	top: 50px;
+	height: 40px;
+}
+
+#navigation-tool ul {
+padding-left:10px;
+}
+
+#text-options {
+display: flex;
+/* padding-left:3%; */
+width: 40%;
+margin-top: 1.5em;
+}
+
+#navigation-wrap {
+margin-top: -6em;
+margin-left: 40%
+}
+
+
+nav#breadcrumb {
+padding-left: 0;
+top: -13em;
+/* margin-top: -7em; */
+left: 20%;
+z-index: 1020;
+background-color:inherit;
+height:60px;
+}
+
+ol.breadcrumb {
+height:37px;
+}
+
+#breadcrumb ol.breadcrumb li{
+margin-top:-5px;
+}
+
+#navigation-tool button {
+	width: 160px;
+}
+
+body.max-menu-left{
+  flex-direction:row;
+  padding-top:60px;
+}
+
+body.max-menu-left nav{
+  width: 20vw;
+  background-color: #ccc;
+  height: 100vh;
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  padding-top:150px;
+  padding-left:15px;
+
+}
+body.max-menu-left nav ul.flex-row{
+  flex-direction:column !important;
+}
+
+body.max-menu-left nav #text-tools{
+  position: fixed;
+  top:0px;
+  width:100%;
+  text-align:center;
+  display:flex;
+  justify-content: space-around;
+
+}
+body.max-menu-left nav > div{
+    padding-left:15px;
+}
+body.max-menu-left nav ul{
+    list-style-type: square;
+}
+
+body.max-menu-left .nav-item{
+ text-align: left !important;
+ margin-top: 10px;
+ font-size: large;
+}
+body.max-menu-left .no-list-style{
+    list-style-type: none;
+    padding:0;
+    margin:0;
+    margin-left: -15px;
+}
+body.max-menu-left nav  a{
+ padding: 5px;
+}
+body.max-menu-left nav .active a{
+ background-color: #eee;
+}
+
+details{
+ margin :0;
+}
+
+.nav-fill summary.nav-item{
+ margin: 0;
+ padding: 0;
+}
+
+body.max-menu-left .navbar-nav > li{
+    float:none;
+		margin-top: 10px;
+}
+
+body.max-menu-left #main-max-container{
+  width: 65vw;
+  margin-left:21vw;
+  padding:10px;
+  padding-top:50px;
+}
+
+body.max-menu-left footer{
+  position: fixed;
+  bottom:0px;
+  left:0px;
+  width: 100vw;
+  background-color:black;
+}
