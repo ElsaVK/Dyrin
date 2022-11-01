@@ -15,3 +15,5 @@ Date : avril - juillet 2022
 Ce dépot contient :
 - les fichiers correspondant au projet Dyrin (les fichiers édités se trouvent dans le dossier `dyrin-editions` du dossier `stage-main`)
 - le rapport de mon mémoire de stage en version LateX et PDF
+
+Accéder à la [version PDF du mémoire](https://github.com/ElsaVK/Memoire_de_stage_2022/tree/main/m%C3%A9moire/M%C3%A9moire%20PDF)
