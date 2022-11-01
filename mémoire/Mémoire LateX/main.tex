@@ -252,7 +252,7 @@ pdfkeywords = {Dyrin} {recherche} {sciences-humaines} {PDN} {CRAHAM} {Caen} {XML
 	
 	Une partie du travail consistait également à tester un nouvel outil développé par le \acrshort{PDN} et le \acrfull{CERTIC} : le moteur d'affichage XML prénommé MaX. Ce moteur d'affichage permet de créer des sorties HTML de ses données XML de manière autonome. Cependant il laisse également libre cours à une personnalisation des résultats à travers la manipulation de fichiers xQuery et XSL. Le site Web de Dyrin est ainsi le premier projet à être développé nativement sous MaX.
 	
-	Enfin, le dernier objectif de ce stage était également de comprendre les mécanismes de création d'une édition numérique de sources anciennes, ainsi que de développer un regard neuf et critique sur ces pratiques. \\
+	Enfin, le dernier objectif de ce stage était également de comprendre les mécanismes de création d'un projet numérique en sciences humaines et sociales, ainsi que de développer un regard neuf et critique sur ces pratiques. Il s'agissait notamment de mener une réflexion quant aux impacts environnementaux liés à ce  type de projet ainsi que d'explorer plusieurs pistes d'amélioration pour l'avenir. \\
 	
 	\textbf{Mots-clefs} ; {PDN} ; {CRAHAM} ; {Caen} ; {edition} ; {XML} ; {TEI} ; {BaseX} ; {recherche} ; {sciences-humaines} ; {FAIR} ; {environnement} ; {métadonnées}
 	
@@ -278,8 +278,13 @@ pdfkeywords = {Dyrin} {recherche} {sciences-humaines} {PDN} {CRAHAM} {Caen} {XML
 	Et enfin à M. Thibault Clérice, directeur de notre Master, qui a su en l'espace de deux ans nous transmettre toute sa passion pour les humanités numériques\dots
 	
 	
-	\printbibliography
+\defbibnote{intro}{Cette bibliographie contient les travaux principaux au coeur du projet, suivis d'une classification des sources annexes en trois thèmes : sciences humaines et sociales (SHS), numérique et développement, écologie et environnement.}
+\printbibliography[title=Bibliographie,prenote=intro, notkeyword = eco, notkeyword = num, notkeyword = shs]
 
+
+\printbibliography[heading=subbibliography,title={Références autour de la recherche en SHS},keyword=shs]
+\printbibliography[heading=subbibliography,title={Références autour du numérique et du développement},keyword=num]
+\printbibliography[heading=subbibliography,title={Références autour de l'écologie et de l'environnement},keyword=eco]
 	
 	\chapter{Introduction}
 Si l'on devait expliquer le choix ayant motivé à faire ce stage, d'avril à fin juillet 2022, au sein du \acrfull{PDN} de l'université de Caen, il nous faudrait remonter à l'année 2018-2019. A ce moment là, alors en Erasmus à l'université d'Oslo, en Norvège, ce fut pour nous l'occasion de rédiger un mémoire de recherche portant sur les relations entre mères et enfants dans la Scandinavie du \textsc{xii}\ieme{} siècle. C'est à ce moment là que nous découvrions pour la première fois le monde des humanités numériques.
@@ -411,7 +416,7 @@ Contrairement au monde du numérique, les éditions papier offrent la possibilit
 
 En effet un des problèmes de l'ouverture de la recherche, et d'autant plus face à la forte expansion de la pratique de l'OpenData, pratique qui consiste à rendre accessible les données dont l'usage est laissé libre aux usagers, a été de ne plus y voir clair entre les recherches en cours, celles terminées, celles aux hypothèses validées ou bien rejetées. En somme, puisque la donnée est accessible à n'importe quel moment de la réflexion scientifique, cela peut porter à confusion pour un public inconscient des normes de la publication scientifique.
 
-Dans les pratiques éditoriales universitaires papier, la publication d'un travail de recherche ne peut se faire sans être revue auparavant par des pairs, c'est-à-dire par un comité d'experts missionné dans le but de juger de la rigueur scientifique des hypothèses qui y sont développées. C'est une des fonctions principales des \acrshort{PUC} pour tout travail d'édition. Or, pour la recherche exposée via le numérique, en accès libre à tout instant, ce travail de vérification ne peut être effectué avant la diffusion des travaux. C'est pourquoi certains d'entre eux se retrouvent cités et partagés dans les journaux et les réseaux à des stades préliminaires, avec des pratiques scientifiques non validées parfois même erronées. Ce qui a évidemment d'importantes conséquences dans le débat public, car cela pourrait être apparenté à de la désinformation\footnote{La pratique de la désinformation peut être apparentée à l'ensemble de techniques de communication visant à tromper des personnes ou l'opinion publique pour protéger des intérêts (privés ou non) ou influencer l'opinion publique. Source : \cite{desinformation}}.
+Dans les pratiques éditoriales universitaires papier, la publication d'un travail de recherche ne peut se faire sans être revue auparavant par des pairs, c'est-à-dire par un comité d'experts missionné dans le but de juger de la rigueur scientifique des hypothèses qui y sont développées. C'est une des fonctions principales des \acrshort{PUC} pour tout travail d'édition. Or, pour la recherche exposée via le numérique, en accès libre à tout instant, ce travail de vérification ne peut être effectué avant la diffusion des travaux. C'est pourquoi certains d'entre eux se retrouvent cités et partagés dans les journaux et les réseaux à des stades préliminaires, avec des pratiques scientifiques non validées parfois même erronées. Ce qui a évidemment d'importantes conséquences dans le débat public, car cela pourrait être apparenté à de la désinformation\footnote{La pratique de la désinformation peut être apparentée à l'ensemble de techniques de communication visant à tromper des personnes ou l'opinion publique pour protéger des intérêts (privés ou non) ou influencer l'opinion publique.}.
 
 C'est le double jeu risqué de l'OpenData : faire de la transparence un gage de la rigueur scientifique mais qui peut être également se retourner contre elle-même et devenir, parfois sans le vouloir, source de désinformation.
      
