@@ -8,6 +8,8 @@ Lieu de stage : Pôle document numérique de Caen
 
 Date : avril - juillet 2022
 
+Note du jury : 17/20
+
 ---
 
 ## *Pratiques et réflexions autour de l'édition numérique de sources anciennes et de ses outils. L'exemple du projet Dyrin, programme de recherche sur la faune du Grand Nord.*
