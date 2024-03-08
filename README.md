@@ -10,6 +10,8 @@ Date : avril - juillet 2022
 
 Note du jury : 17/20
 
+Pour toute reproduction ou réutilisation de mon travail, ce dernier est sous **licence CC BY-NC-SA 4.0** (https://creativecommons.org/licenses/by-nc-sa/4.0/deed.fr)
+
 ---
 
 ## *Pratiques et réflexions autour de l'édition numérique de sources anciennes et de ses outils. L'exemple du projet Dyrin, programme de recherche sur la faune du Grand Nord.*
